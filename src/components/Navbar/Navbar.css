@@ -1,0 +1,252 @@
+
+
+@font-face {
+    font-family: "Poppins800" ;
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins400" ;
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins500" ;
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf)
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.top-navbar {
+background-color: #00438b;
+  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.top-navbar-left {
+
+    font-size: 10px;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-style:normal;
+    line-height: 1.8;
+    font-family: "Poppins800";
+
+
+}
+
+.top-navbar-right {
+  display: flex;
+  gap: 25px;
+}
+
+.top-navbar-right a {
+      position: relative; 
+  font-size: 10px;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-style:normal;
+    line-height: 1.8;
+    font-family: "Poppins800";
+ 
+
+}
+
+.top-navbar-right a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@font-face {
+    font-family: "Poppins800" ;
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.top-navbar {
+background-color: #00438b;
+  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.top-navbar-left {
+
+    font-size: 10px;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-style:normal;
+    line-height: 1.8;
+    font-family: "Poppins800";
+
+
+}
+
+.top-navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.top-navbar-right a {
+  position: relative;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  font-style: normal;
+  line-height: 1.8;
+  font-family: "Poppins800";
+  padding-left: 12px; /* Burayı ekledik */
+  display: inline-block; /* Daha sağlıklı pozisyonlama için */
+}
+
+.top-navbar-right a:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
+  width: 1px;
+  background-color: white;
+  display: inline-block;
+}
+
+.top-navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.navbar_2{
+    background-color:#fff;
+    height:80px ;
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100  ;
+  top: 0;
+  
+
+ 
+  
+
+
+
+}
+.navbar_left{
+    display: flex;
+
+    
+}
+.navbar_left_text {
+        gap: 40px;
+     display: flex;    
+    text-align: left;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    font-family: "Poppins500";
+    color:dimgray;
+    text-decoration: none;
+        margin-left: 6%;
+        margin-top: 1%;
+
+
+
+  
+
+
+}
+
+.navbar_left_text a {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins500";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  /* spacing */
+}
+
+.navbar_left_text a:hover {
+  color: #333; /* istersen hover rengini de biraz koyulaştırabilirsin */
+}
+
+
+
+
+
+
+   .navbar_mid {
+  font-size: 24px;
+  font-weight: 800;
+   font-family: "Manrope800";
+text-transform: uppercase;
+  color: black;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 27%;
+}
+
+
+
+.navbar_right {
+    margin-right: 2%;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

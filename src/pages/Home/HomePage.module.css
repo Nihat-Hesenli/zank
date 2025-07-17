@@ -1,0 +1,1641 @@
+
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope500";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+
+}
+  body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ Sağa scroll engellenir */
+}
+
+.oldPrice{
+
+  margin-right: 5px;
+}
+
+.header {
+  position: relative; 
+  width: 100%;
+  height: 510px;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.header_photo {
+    background-image: url(../../assets/images/air-force.jpg);
+  position: relative; 
+  width: 100%; 
+  height: 510px;
+  background-size: cover;
+  background-position: center;
+}
+.header_texts{
+
+    position: absolute;
+  top: 20%;
+  left: 4%;
+  z-index: 2;
+}
+.header_text_1{
+
+        font-size: 48px;
+    margin: 0;
+    color: white;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+   font-family: "Manrope500";
+}
+.header_text_2{
+
+    font-size: 18px;
+    margin: 30px 0;
+    color:white;
+    line-height: 1.8;
+    text-align: left;
+    font-family: "Poppins400";
+
+
+}
+.header_buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.header_button_1{
+      width: 210px;
+ background-color:red;
+ color: white;
+padding: 18px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .3px;
+    line-height: 1;
+   font-family: "Poppins400";
+
+ 
+
+}
+.header_button_2{
+         width: 150px;
+ background-color:red;
+ color: white;
+padding: 18px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .3px;
+    line-height: 1;
+   font-family: "Poppins400";
+
+
+
+}
+
+.card_1{
+
+    width: 350px;
+    height: 370px;
+background-color:#161616
+
+
+
+}
+
+.card_1_text{
+
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:red;
+    font-family: "Poppins600";
+ 
+}
+
+.card_1_text_2{
+    font-size: 26px;
+    line-height: 1.3;
+    font-family:"Manrope500";
+    color: white;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 700;
+   
+
+}
+.card_1_text_3{
+
+
+        color: white;
+        line-height: 1.8;
+   font-family: "Poppins400";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    
+   
+}
+
+.card_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;  
+    justify-content: center;
+    padding-top: 30px;  
+    text-align: left;
+    margin-left: 8%;
+    padding-top: 15%;
+}
+
+.card_2{
+    background-image:url(../../assets/images/collec_1.png);
+    object-fit: cover;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+
+
+    
+
+}
+.card_2:hover, .card_3:hover, .card_4:hover {
+    opacity: 0.8;
+ 
+}
+
+.card_3{
+
+    background-image: url(../../assets/images/collec_2.png);
+      object-fit: cover;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+
+}
+
+.card_4{
+ background-image: url(../../assets/images/collec_3.png);
+      object-fit: cover;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+
+}
+
+.cards_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 110px;
+
+}
+
+.winter_head_1 {
+  font-size: 26px;
+  line-height: 1.3;
+  font-family: "Manrope500", sans-serif !important;
+  font-weight: 700 !important;
+  color: #161616 !important;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.winter_head_2{
+        line-height: 1.8;
+        text-align: center;
+        color:#343131;
+        font-size: 14px;
+        font-style: normal;
+        font-family: "Poppins400";
+
+
+
+}
+
+.winter_head {
+    margin-bottom: 50px;
+
+
+}
+
+
+
+
+
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 360px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  border: none;
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+  opacity: 0.9;
+
+}
+
+.saleTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00438b;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.discountTag {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background-color: #ffcccc;
+  color: red;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+
+.model {
+ 
+
+
+  font-family: "Manrope400";
+   color:#161616;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+  font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+  margin: 0;
+  font-family: "Poppins500";
+}
+
+.rating {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 1px;
+  z-index: 2;
+}
+
+.star {
+  color: black; 
+  font-size: 11px;
+
+}
+
+
+.iconsOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-10px);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.card:hover .iconsOverlay {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.iconCircle {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.shoe_cards{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+
+
+
+}
+
+
+
+
+
+.dashedFrame {
+        background-color: #fff5f5;
+
+  width: 40%;
+  height: 2.3cm;
+  border: 1px dashed red;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+.dashedFrame_text_1{
+font-weight: 900;
+    color: #f03e3e;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: "Manrope400";
+    margin-left: 20px;
+
+}
+.dashedFrame_button{
+    
+padding: 11px 25px;
+    font-size: 14px;
+        color:#fff;
+    background-color: #ed4b4b;
+        font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    line-height: 1.4;
+        text-align: center;
+            border-radius: 30px;
+            font-family: "Poppins600";
+         margin-left: 50px;
+
+
+
+
+
+}
+
+.dashedFrame_text_2{
+    font-weight: 900;
+    color: black;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: "Manrope400";
+    margin-left: 70px;
+
+
+}
+
+
+
+
+.dashedFrame_2 {
+    background-color: #00438B14;
+
+  width: 60%;
+  height: 2.2cm;
+  border: 1px dashed darkblue;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 23px;
+
+  
+}
+
+.dashedFrame_2_button{
+                     
+
+
+    padding: 9px 25px;
+    font-size: 14px;
+        color:#fff;
+    background-color: #00438b;
+    letter-spacing: 2px;
+    display: inline-block;
+    line-height: 1.4;
+        text-align: center;
+            border-radius: 30px;
+            font-family: "Poppins400";
+
+        
+
+
+}
+
+.dashedFrame_2_text{
+font-weight: 900;
+    color: #00438b;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: "Manrope400";
+    margin-left: 20px;
+
+}
+
+.dashedFrames{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    
+}
+
+
+.Featured_section_head{
+font-size: 22px;
+    line-height: 1.3;
+    color:#161616;
+    font-family:"Manrope500";
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+
+
+.priceRow {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-top: 4px;
+}
+
+.oldPrice {
+  color: red;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-family: "Poppins400";
+}
+
+
+.bigShoeCard_1 {
+
+     height: 700px;
+    width: 730px;
+position: relative;
+
+}
+.bigShoeCard_1:hover .bigShoeCardImg_1{
+  transform: scale(1.1);
+
+}
+
+.bigShoeCardImg_1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+      transition: transform 0.2s ease;
+
+
+}
+
+
+.bigShoeCard_2:hover .bigShoeCardImg_2{
+  transform: scale(1.1);
+
+}
+
+.bigShoeCardImg_2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+      transition: transform 0.2s ease;
+
+
+}
+
+
+
+
+
+
+
+
+.bigShoeCard_Content_Text_1{
+  background-color: #000;
+  color: #fff;
+
+
+      font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    font-family: "Poppins600";
+   
+    
+   
+
+
+}
+.bigShoeCard_Content{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.bigShoeCard_Content_Text_2{
+    font-style: normal;
+font-size: 20px;
+font-family: "Manrope500";
+color:black;
+letter-spacing: 1px;
+margin-top: 20px;
+margin-bottom: 15px;
+
+
+}
+.bigShoeCard_Content_Text_3{
+font-size:14px;
+font-family:"Poppins400";
+color :#7a7a7a;
+
+
+
+}
+.bigShoeCard_Content_Text_4{
+     font-size: 14px;
+    color:black;
+    font-family: "Poppins200";
+    margin-top: 15px;
+
+
+}
+
+.bigShoeCard_2_Content_Text_1{
+
+ color: #000;
+      font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Poppins800";
+
+}
+
+
+.bigShoeCard_2{
+
+     height: 340px;
+    width: 770px;
+position: relative;
+
+}
+
+.bigShoeCardImg_2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.bigShoeCards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.bigShoeCardRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+
+}
+
+.widget_1{
+  height: 60px;
+width: 60px;
+margin-bottom: 15px;
+margin-left: 73px;
+
+}
+.widgetText_1{
+font-size: 16px;
+    line-height: 1.6;
+    font-family : "Manrope500";
+    color:161616;
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.widgetText_2{
+
+
+  font-family: "Poppins400";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color:#343131;
+    line-height: 1.8;
+}
+
+.widgetParag_2{
+  margin-left: 25px
+}
+
+.widgetContainers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 150px;
+}
+.widgetParag_1{
+  margin-right: 20px;
+
+
+}
+
+.widget_2{
+
+   height: 60px;
+width: 60px;
+margin-bottom: 15px;
+margin-left: 90px;
+
+
+}
+
+.widget_2_Text_2{
+
+ font-family: "Poppins400";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color:#343131;
+    line-height: 1.8;
+    margin-left: 25px;
+
+
+}
+
+.widget_3{
+
+    height: 60px;
+width: 60px;
+margin-bottom: 15px;
+margin-left: 60px;
+
+
+}
+
+.widget_3_Parag_2{
+margin-left: 70px;
+
+
+}
+.widget_4_Parag_2{
+margin-left: 40px;
+
+
+}
+
+.humanSection {
+     line-height: 1.8;
+        text-align: center;
+        color:#343131;
+        font-size: 14px;
+        font-style: normal;
+        font-family: "Poppins400";
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+
+
+}
+.comment_container{
+  margin-top: 100px;
+  margin-bottom: 16.5%;
+}
+.comment_photo {
+  width: 100%;
+  height: 430px;
+  background-image:
+    linear-gradient(rgba(0, 67, 139, 0.3), rgba(0, 67, 139, 0.3)),
+    url(../../assets/images/comment_photo_1.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+.comment_text_1{
+  
+font-size: 18px;
+    line-height: 1.75;
+    font-style: normal;
+    font-family: "Poppins400";
+    text-align: center;
+    position: relative;
+    color:#fff;
+
+
+
+}
+.photoTitle_img{
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: relative;
+
+
+
+
+}
+.photoText_1 {
+  color: #fff;
+      font-size: 16px;
+    line-height: 1.6;
+    font-family: "Manrope500";
+      position: relative;
+
+
+
+}
+
+.photoText_2{
+    font-family: "Poppins400";
+    font-size: 14px;
+          position: relative;
+          color: #fff;
+
+
+}
+
+.comment_photoText{
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  padding-top: 2.5%;
+}
+.comment_context{
+padding-top: 6%;
+
+}
+.slideButton{
+  position: relative;
+
+
+
+
+}
+.trendProducts_section{
+
+  margin-bottom: 200px;
+}
+
+
+.current_context{
+  background-color: #fff;
+ height: 250px;
+ width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 35px;
+  padding-left: 35px;
+
+
+}
+
+
+
+.current_text_1{
+    text-transform: uppercase;
+    font-size: 12px;
+line-height: 1.6;
+font-family: "Manrope500";
+  color:#343131;
+  margin-bottom: 10px;
+}
+
+.current_text_2{
+
+  font-size: 20px;
+      line-height: 1.4;
+      font-family: "Manrope500";
+      color: black;
+        margin-bottom: 9px;
+
+
+}
+
+.current_text_3{
+
+  line-height: 1.5;
+  color:#343131;
+  font-family: "Poppins400";
+  font-size: 14px;
+
+
+}
+
+.current_text_par{
+      margin-top: 9px;
+
+
+
+
+}
+
+
+.currentPhoto_wrapper {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.currentPhoto_1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.currentPhoto_1:hover{
+  opacity: 0.8;
+  transition: 0.6s ease;
+}
+
+.currentPhoto_1_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 7px 20px;
+  color: #000;
+  border: none;
+
+  font-family: "Poppins400";
+    font-size: 14px;
+    font-weight: 400;
+}
+.currentPhotoCards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 200px;
+
+}
+
+/*.zankInsta_1{
+
+  height: 230px;
+  width: 230px;
+  border-radius: 5px;   
+            
+
+}   */         
+
+.zankInsta_1:hover .zankInsta_photos  {
+  transform: scale(1.5);
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+/*.zankInsta_photos{ 
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  
+  
+
+} */
+
+
+
+
+
+/* Diğer medya sorguları için de flex-shrink:1 olacak şekilde düzenle */
+
+@media (max-width: 1024px) {
+  .shoe_cards > div.card {
+    flex: 0 1 calc((100% - 40px) / 3);
+    max-width: calc((100% - 40px) / 3);
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoe_cards > div.card {
+    flex: 0 1 calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+    min-width: 100px;
+  }
+
+  .shoe_cards > div.card:nth-child(n+3) {
+    display: none;
+  }
+}
+
+/* Küçük ekranlarda 1 card */
+@media (max-width: 480px) {
+  .shoe_cards > div.card {
+    flex: 0 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+.cards_container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .cards_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 100%;
+  }
+
+  .cards_container > div {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+
+/* 768px altı: tek sütun, 4 satır */
+@media (max-width: 768px) {
+  .cards_container {
+    grid-template-columns: 1fr; /* tek sütun */
+  }
+  
+  .card {
+    width: 100%;
+    height: auto; /* istersen yükseklik ayarla */
+  }
+}
+  @media (max-width:1024px) {
+
+  .dashedFrames{
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dashedFrame{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    height: 2.3cm;
+    gap: 5px;
+    margin-bottom: -5px;
+
+
+  }
+
+  .dashedFrame_2{
+       display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content:space-between;
+    height: 2.3cm;
+    gap: 5px;
+
+
+
+  }
+  .dashedFrame_text_1, .dashedFrame_text_2{
+    text-align: center;
+  }
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+  .dashedFrame {
+    display: flex;
+    flex-direction: column;  /* Alt alta diz */
+    align-items: center;     /* Ortala yatayda */
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    gap: 10px;  /* Elemanlar arası boşluk */
+  }
+
+   .dashedFrame_text_1,
+  .dashedFrame_text_2 {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+  } 
+  
+  .mobileHide {
+    display: none;
+  }
+
+
+
+  .dashedFrame_button {
+    background-color: #ff4c4c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .dashedFrame_2{
+    display: flex;
+    flex-direction: column;
+    height: 3cm;
+    align-items: center;
+  
+
+  }
+  .dashedFrame_2_text{
+    margin-top: 20px;
+    
+  }
+  .dashedFrame_2_button{
+    margin-bottom: 15px;
+  }
+} 
+.currentPhotoCards {
+  display: flex;
+  flex-wrap: nowrap; /* default: satırda sığdırmaya çalış */
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 200px;
+  overflow-x: hidden; /* scroll'u gizle (önlem) */
+}
+
+/* 1440px ve altı (büyük ekranlar için) */
+@media (max-width: 1440px) {
+  .currentPhotoCards {
+    flex-wrap: wrap; /* sarma izni ver */
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .currentPhotoCard_1 {
+    flex: 1 1 calc(25% - 20px); /* 4 sütun gibi davran */
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .currentPhoto_wrapper,
+  .current_context {
+    width: 100%;
+    max-width: 350px; /* maksimum 350px ama küçülebilir */
+  }
+}
+
+/* Tablet: 1024px altı */
+@media (max-width: 1024px) {
+  .currentPhotoCards {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .currentPhotoCard_1 {
+    flex: 1 1 calc(45% - 20px); /* 2 sütun */
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currentPhoto_wrapper,
+  .current_context {
+    width: 100%;
+    max-width: 100%;
+  }
+
+   .current_context {
+    width: 100%;
+    max-width: 300px; /* biraz küçült */
+    height: auto;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .current_text_2 {
+    font-size: 18px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .current_text_3 {
+    font-size: 13px;
+  }
+}
+
+/* Mobil: 768px altı */
+@media (max-width: 768px) {
+  .currentPhotoCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .currentPhotoCard_1 {
+    width: 100%;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currentPhoto_wrapper,
+  .current_context {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+    .current_context {
+    width: 100%; /* genişliği %100 yap */
+    height: auto; /* yüksekliği içeriğe göre ayarla */
+    padding-top: 20px; /* paddingleri küçült */
+    padding-left: 20px;
+  }
+
+  .current_text_2 {
+    font-size: 16px; /* başlık küçült */
+    line-height: 1.3;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .current_text_3 {
+    font-size: 12px; /* paragraf küçült */
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .current_text_par {
+    margin-top: 6px;
+  }
+}
+
+
+
+
+@media(max-width:1024px) {
+  .bigShoeCards{
+    width: 80%;
+
+  }
+  .bigShoeCard_1{
+
+    max-width:80% ;
+  }
+}
+
+
+@media(max-width:1024px) {
+  .bigShoeCards{
+    width: 80%;
+
+  }
+  .bigShoeCard_2{
+
+    max-width:80%;
+  }
+}
+
+/*ZANK_INSTA SECTION */
+
+
+.zankInsta_1 {
+  width: 100%;    /* slide container genişliğine uy */
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Fotoğraf hover efekti (doğru seçici ile) */
+.zankInsta_1:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Container flex ayarları */
+.zankInsta_photos {
+  /* Swiper kendi stilini kullansın, display:flex kaldır */
+  margin-top: 40px;
+  margin-bottom: 100px;
+  /* display: flex;  kaldırıldı */
+  /* gap: 8px;  kaldırıldı */
+  /* justify-content: center; kaldırıldı */
+}
+
+/* Responsive fotoğraf boyutları */
+
+
+/* Responsive fotoğraf boyutları */
+/* @media (max-width: 1024px) {
+  .zankInsta_1 {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zankInsta_1 {
+    height: 150px;
+    width: 150px;
+  }
+} */
+
+@media (max-width:1024px){
+   .widgetContainers{
+     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+   
+
+   
+   }
+
+
+
+}
+
+
+
+/* 1440px ve üstü - orijinal hali */
+@media (min-width: 1440px) {
+  .bigShoeCard_1 {
+    height: 700px;
+    width: 730px;
+  }
+  .bigShoeCard_2 {
+    height: 340px;
+    width: 770px;
+  }
+  .bigShoeCards {
+    flex-wrap: nowrap;
+  }
+}
+
+/* 1024px - biraz küçült, yan yana kalsın */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .bigShoeCard_1 {
+    height: 600px;
+    width: 600px;
+  }
+  .bigShoeCard_2 {
+    height: 300px;
+    width: 650px;
+  }
+  .bigShoeCards {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+/* Genel box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Üst kapsayıcılar için margin ve padding sıfırlama */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bigShoeCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 100%; /* genişlik sınırı */
+    padding: 0; /* varsa padding sıfırlayın */
+  }
+
+  .bigShoeCard_1 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .bigShoeCardRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bigShoeCard_2 {
+    width: 100%;
+    height: 340px;
+  }
+  
+  .bigShoeCardImg_1,
+  .bigShoeCardImg_2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* resmin taşmaması ve dolması için */
+    display: block; /* inline img altındaki boşluk için */
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .comment_text_1 {
+    font-size: 20px;
+  }
+
+  .photoTitle_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .photoText_1 {
+    font-size: 18px;
+  }
+
+  .photoText_2 {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (1024px) */
+@media (max-width: 1024px) {
+  .comment_photo {
+    height: 350px;
+  }
+
+  .comment_text_1 {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .photoTitle_img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .photoText_1 {
+    font-size: 15px;
+  }
+
+  .photoText_2 {
+    font-size: 13px;
+  }
+}
+
+/* Small devices (768px ve altı) */
+@media (max-width: 768px) {
+  .comment_photo {
+    height: 250px;
+  }
+
+@media (max-width: 768px) {
+  .comment_text_1 {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 15px;
+ 
+  }
+
+  
+}
+
+
+  .photoTitle_img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .photoText_1 {
+    font-size: 13px;
+  }
+
+  .photoText_2 {
+    font-size: 12px;
+  }
+
+  .comment_photoText {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white;
+  border: 2px solid transparent;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+:global(.swiper-button-prev) {
+  left: -20px;
+}
+
+:global(.swiper-button-next) {
+  right: -20px;
+}
+
+/* 🔥 Ok ikonlarının stilini küçült */
+:global(.swiper-button-next)::after,
+:global(.swiper-button-prev)::after {
+  font-size: 12px !important;  /* küçük ok ikonu */
+  color: black !important;
+}
+
+
+
+/* YourStyles.module.css */
+
+
+
+
+
+
+
+    
+  
+/* 
+.dashedFrame {
+  background-color: #fff5f5;
+  width: 40%;
+  height: 2.3cm;
+  border: 1px dashed red;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  
+} */
+
