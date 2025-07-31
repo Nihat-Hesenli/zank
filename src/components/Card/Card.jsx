@@ -5,9 +5,12 @@ import { FaCar } from "react-icons/fa";
 import { CSSTransition } from 'react-transition-group';
 import styles from '../Card/Card.module.css';
 import React, { useRef } from "react";
+import { BsTrash3 } from "react-icons/bs";
+
 
 export const Card = ({ isOpen, onClose, cartItems = [] , handleRemoveItem,}) => {
   const nodeRef = useRef(null);
+  
 
   return (
     <CSSTransition
@@ -73,7 +76,7 @@ export const Card = ({ isOpen, onClose, cartItems = [] , handleRemoveItem,}) => 
                       : `$${item.minPrice} - $${item.maxPrice}`}
                   </p>
                 </div>
-                <button onClick={()=> handleRemoveItem(item.id)} className={styles.deleteBtn}>Delete</button>
+                <span onClick={()=> handleRemoveItem(item.id)} className={styles.trashBtn}><BsTrash3 /></span>
               </div>
             ))}
         

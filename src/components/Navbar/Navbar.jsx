@@ -1,5 +1,4 @@
 import './Navbar.css';
-
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { VscHeart } from "react-icons/vsc";
@@ -16,8 +15,11 @@ import { useState } from 'react';
 
 
 
-export const Navbar = () => {
+export const Navbar = ({ handleRemoveItem, cartItems, setCartItems,  isCartOpen, setCartOpen }) => {
     const [showCart, setShowCart] = useState(false);
+
+    
+
 
     return (
         <>
@@ -44,8 +46,12 @@ export const Navbar = () => {
                             <Link to="/">HOME</Link>
                             <Link to="/shop">SHOP</Link>
                             <Link to="/product">PRODUCT</Link>
-                            <Link to="/pages">PAGES</Link>
+                            <Link to="/aboutUs">ABOUT US</Link>
+                             <Link to="/contact">CONTACT</Link>
+
                         </div>
+
+                        
 
 
 
@@ -58,7 +64,14 @@ export const Navbar = () => {
 
                     </div>
                     <div className="navbar_right">
-                        <FaSearch fontSize={18} color="black" />
+
+                        <FaSearch
+                            fontSize={18}
+                            color="black"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => setShowSearch(true)} // Arama kutusunu göster
+                        />
+                       
                         <HiOutlineShoppingBag fontSize={25} color="black" onClick={() => setShowCart(true)} style={{ cursor: "pointer" }} />
                         <VscHeart fontSize={25} color="black" />
                         <SlRefresh fontSize={20} color="black" />
@@ -79,8 +92,9 @@ export const Navbar = () => {
 
             </div>
             {
-              <Card isOpen={showCart} onClose={() => setShowCart(false)} />      
-                    }
+                <Card   handleRemoveItem={handleRemoveItem} cartItems={cartItems} isOpen={showCart} onClose={() => setShowCart(false)} />
+                
+            }
         </>
 
 

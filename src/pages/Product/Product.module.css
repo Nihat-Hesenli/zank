@@ -1,0 +1,1260 @@
+
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope700";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope500";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Manrope400";
+  src: url(../../assets/fonts/Manrope/static/Manrope-Regular.ttf);
+}
+
+
+
+
+
+
+
+.ProductContainer{
+
+    margin-top: 55px;
+    
+  display: flex;
+  gap: 23px;
+  align-items: flex-start;
+
+  
+}
+
+  
+    
+    
+
+
+
+
+
+.ProductPhoto_1{
+ width: 734px;
+    height: 980px;
+    object-fit: contain;
+    padding-bottom: 63px;
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+}
+.ProductPhoto_2{
+    width: 95px;
+    height: 120px;
+    object-fit: cover;
+    
+
+
+}
+.ProductPhotoSmall{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ProductPhotos{
+
+    display: flex;
+    gap: 12px;
+    margin-left: 20px;
+   overflow-y: auto;
+
+}
+.ProductContext {
+  position: sticky;
+  top: 60px;
+  align-self: flex-start;
+}
+
+
+
+.ContextTexts_1{
+
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+    
+}
+
+.ContextText_1{
+        font-size: 12px;
+    font-family: "Poppins400";
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    color:#161616
+
+
+
+}
+.ProductContainer{
+    display: flex;
+    gap: 23px;
+    
+}
+.ContextText_title{
+    font-size: 34px;
+    font-family: "Manrope500";
+    letter-spacing: 1px;
+        color:#161616;
+        margin-top: 20px;
+
+
+
+
+
+}
+.rating{
+    margin-top: 18px;
+  
+}
+
+.star {
+  color: black; 
+  font-size: 11px;
+
+  
+
+}
+.ContextReviews{
+font-size: 12px;
+        color:#161616;
+font-family: "Poppins500";
+text-transform: uppercase;
+margin-left: 15px;
+    
+
+}
+
+.saleTag {
+  
+  top: 10px;
+  left: 10px;
+  background-color: rgb(89, 144, 120);
+  color: white;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-family: "Poppins600";
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.discountTag {
+
+  top: 40px;
+  left: 10px;
+  background-color: #ffcccc;
+  color: red;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-family:"Poppins600";
+  z-index: 2;
+}
+
+.SaleDiscount{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.Price{
+    font-size: 20px;
+        color:#161616;
+font-family: "Poppins600";
+
+    margin-top: 15px;
+    margin-bottom: 17px;
+
+}
+
+.ContextTextPar{
+    color:#343131;
+        font-family: "Poppins400";
+    font-size: 14px;
+    line-height: 26px;
+
+
+}
+.BorderText_1{
+color:#343131;
+font-family: "Poppins600";
+font-size: 12px;
+
+
+
+
+
+}
+
+.ContextBorder{
+    height: 120px;
+    width: 620px;
+    border: 1px solid #e1e2e3 ;
+    border-radius: 5px;
+
+
+
+}
+
+
+.BorderCount_1{
+    background:#d4ffe7;
+color:#398f14;
+border:1px solid #b5fdb0;
+    padding: 7px 17px;
+        border-radius: 4px;
+    font-size: 12px;
+    font-family:"Poppins500";
+
+}
+
+.BorderCount_2{
+background:#f9cccc;
+color:#ed4b4b;
+border:1px solid #ffbfc1;
+    padding: 7px 15px;
+        border-radius: 4px;
+    font-size: 12px;
+    font-family:"Poppins500";
+
+    
+
+
+
+
+}
+.BorderCounts{
+    margin-top: 3px;
+    display: flex;
+    gap: 5px;
+
+}
+.BorderText_3{
+color:#343131;
+font-size:12px;
+font-family: "Poppins400";
+margin-top: 8px;
+
+
+
+
+
+
+
+
+
+}
+.ContextBorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+   
+}
+.Context{
+    margin-left: 20px;
+
+
+}
+.BorderGap{
+   display: flex;
+    align-items: center;
+}
+
+
+.orderedText_1{
+font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    color:#161616;
+
+}
+
+.orderedTexts{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.progressBarContainer {
+  width: 620px;
+  height:10px;
+  background-color: #d3d3d3; 
+/* Açık gri arkaplan */
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 13px;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: #000000; /* Siyah dolu alan */
+  transition: width 0.3s ease;
+}
+
+/* Container for all filters */
+.filtersSection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+}
+
+/* Her satır: başlık + içerik yan yana */
+.filterGroupRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 4%;
+}
+
+/* Başlık için */
+.filterTitle {
+    font-size:14px;
+    font-family: "Poppins200";
+    color:#161616;
+    margin-top: 4px;
+
+}
+
+/* Color dot container sağda */
+.colorOptions {
+  display: flex;
+  gap: 2px;
+  margin-top: 0;
+}
+
+/* Renk kutuları büyüdü, border-radius azaldı */
+.colorDot {
+  width: 65px;  /* biraz daha büyük */
+  height: 23px; /* biraz daha yüksek */
+  border-radius: 1px; /* azaldı */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-left: 15px;
+}
+
+/* Renkler */
+.black {
+  background-color: black;
+}
+.lightBlue {
+  background-color: #add8e6;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.brown {
+  background-color: #8b4513;
+}
+.white {
+  background-color: white;
+  border: 1px solid #000;
+}
+
+/* Sizes container sağda, gap ve sarmayı koruyor */
+.sizesOptions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-top: 0;
+  margin-left:3%;
+}
+
+/* Sizes kutularındaki arka plan rengi açıldı, biraz daha açık lacivert */
+.sizeItem {
+  background-color: #00438b; /* Açık lacivert */
+  color: white;
+  padding: 3px 18px;
+  
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+  font-family: "Poppins400";
+  white-space: nowrap;
+}
+
+/* Sports input aynen kalsın */
+.sportsInput {
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.sportsInput:focus {
+  border-color: #001f4d;
+  box-shadow: 0 0 5px #001f4d;
+}
+.filterGroup{
+    margin-top: 4%;
+    display: flex;
+    gap: 40px;
+
+
+}
+
+
+.dropdownWrapper {
+  position: relative;
+  width: 200px;
+ 
+}
+
+.dropdownHeader {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins400";
+}
+
+.dropdownArrow {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 5px 0;
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: "Poppins400";
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.selectedColor {
+  outline: 2px solid black;
+  transform: scale(1.2);
+}
+
+.selectedSize {
+  background-color: #0e4d92; /* Daha açık lacivert */
+  color: white;
+  outline: 2px solid green;
+  transform: scale(1.2);
+}
+
+
+.price {
+  font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+  margin: 0;
+  font-family: "Poppins500";
+}
+
+
+.oldPrice {
+  margin-right: 5px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+    color: red; 
+
+}
+
+.priceSection{
+
+    display: flex;
+}
+
+.buySection{
+    width: 600px;
+    height: 250px;
+    border: 1px solid #e1e2e3;;
+    margin-top: 30px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+  
+
+
+}
+.buyContext{
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.buyText1{
+font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+
+  font-family: "Poppins400";
+
+
+}
+
+
+.buyButtons_count{
+
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 2px;
+    color:#595959;
+
+
+}
+
+.blueButton1{
+    background-color: #00438b;
+    border-color: #00438b;
+    color:white;
+    font-size: 14px;
+    font-family: "Poppins400";
+    padding: 6.5px 60px;
+    margin-top: 10px;
+
+
+
+}
+.blueButton2{
+        background-color: #00438b;
+    border-color: #00438b;
+
+    padding: 6px 30px;
+        margin-top: 10px;
+
+
+
+}
+
+.buyButtons_1{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.buyButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.redButton{
+        background-color: #e60b09;
+    border-color: #e60b09;
+     color:white;
+    font-size: 14px;
+    font-family: "Poppins400";
+    padding: 6px 245px;
+
+
+
+}
+
+.buyDeliveryText{
+font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+
+  font-family: "Poppins400";
+
+
+}
+
+.buyDelivery{
+
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+}
+.carIcon{
+    margin-top: 2px;
+}
+
+.buyLine{
+    border: 1px solid #e1e2e3;
+      width: 100%;
+      margin-top: 8px;
+
+
+
+      
+
+
+}
+
+.buyIcon1{
+  display: flex;
+  gap: 10px;
+}
+
+.buyIconText{
+
+
+  font-size: 12px;
+   color:#161616;
+
+  font-family: "Poppins500";
+  text-transform: uppercase;
+}
+.buyIcons{
+
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+.yellowDashframe{
+  padding: 14px 50px;
+  background-color: #fffcf2;
+  border: 1px solid #faeecf;
+ margin-bottom: 20px; 
+border-radius: 3px;
+
+
+
+
+}
+.yellowDashframes{
+
+  padding-bottom: -60px;
+}
+
+.yellowText{
+
+  font-size: 13px;
+   color:#161616;
+  font-family: "Poppins400";
+
+}
+.yellowDashframeContext{
+display: flex;
+align-items: center;
+gap: 15px;
+  margin-left: -30px;
+}
+
+.buyCategoryTexts{
+
+  display:flex;
+  gap: 7px;
+
+}
+
+.buyCategoryText1{
+color:#343131;
+text-transform: uppercase;
+font-family:"Poppins700";
+font-size:14px;
+}
+.buyCategoryText2{
+color:#343131;
+font-family:"Poppins400";
+font-size:14px;
+}
+.buyCategory{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 15px;
+
+}
+.buyShare{
+
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.buySosial{
+  display: flex;
+  gap: 3px;
+  margin-top: -5px;
+}
+.buyShare{
+  display: flex;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.buyShareText{
+color:#343131;
+font-family:"Poppins500";
+font-size:14px;
+
+}
+
+.buyCredit{
+    height: 105px;
+    width: 590px;
+    border: 1px solid #e1e2e3 ;
+    background-color: #f7f7f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+
+
+
+}
+
+.buyCard{
+  margin-left: 120px;
+  margin-top: 20px;
+max-width: 100%;
+width: 364px;
+    height: auto;
+
+
+
+}
+
+.buyCreditText{
+color:#343131;
+font-family:"Poppins400";
+font-size:14px;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+
+
+}
+
+.InformationSection{
+
+  margin-top: 36%;
+}
+
+.InfoTitle{
+
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+   .InfoText{
+    font-family: "Poppins500";
+    font-size: 14px;
+    color:#161616;
+    text-transform: uppercase;
+
+ 
+   
+
+
+   }
+
+
+.InfoPar{
+   color:#343131;
+   font-size: 14px;
+   font-family: "Poppins400";
+   margin-top: 30px;
+     margin-left: 20px;
+     line-height: 1.8;
+
+
+
+
+}
+
+.infoList{
+   color:#343131;
+   font-size: 14px;
+   font-family: "Poppins400";
+     margin-left: 20px;
+line-height: 1.8;
+  margin-top: 20px;
+}
+
+.ViewersTitle{
+
+     font-family: "Manrope500";
+    font-size: 20px;
+    color:#161616;
+           margin-left: 20px;
+           padding-bottom: 35px;
+
+ 
+
+
+
+}
+.ViewersSection{
+
+  margin-top: 80px;
+
+}
+
+
+
+
+
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 440px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  border: none;
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+  opacity: 0.9;
+
+}
+
+.saleTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00438b;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: "Manrope700";
+  z-index: 2;
+}
+
+.discountTag {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background-color: #ffcccc;
+  color: red;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: "Poppins400";
+  z-index: 2;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+
+.model {
+ 
+
+
+  font-family: "Manrope400";
+   color:#161616;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+  font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+  margin: 0;
+  font-family: "Poppins500";
+}
+
+.rating {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 1px;
+  z-index: 2;
+}
+
+.star {
+  color: black; 
+  font-size: 11px;
+
+}
+
+
+.iconsOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-10px);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.card:hover .iconsOverlay {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.iconCircle {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.shoe_cards{
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 15px;
+
+
+
+}
+
+
+
+
+/* @media (max-width:400px) {
+
+  .ProductContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+  }
+  .ProductPhoto_1{
+    width: 400px;
+    height: auto;
+
+
+
+
+  }
+
+  .ProductPhotoSmall{
+    height: 20px;
+    width: 20px;
+
+
+
+
+  }
+  .ProductPhotos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .ProductContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .ProductPhotos {
+    display: flex;
+    flex-direction: column; /* önce bu, sonra içindeki elemanları yönetiriz */
+  }
+
+  .ProductPhoto_1 {
+    order: 1;
+    width: 100%;
+    height: 80%;
+  }
+
+  .ProductPhotoSmall {
+   order: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: -10%;
+   
+  }
+
+  .ProductPhotoSmall img {
+    width: 80px;
+    height: 130px;
+    
+    object-fit: contain;
+  }
+
+ .hideOnMobile {
+    display: none;
+
+  }
+
+  .ProductContext {
+    margin-left: 20px;
+   
+  }
+
+  .ContextText_2{
+   display: flex;
+    flex-direction: column;
+
+  }
+
+  .ContextBorder{
+    width: 450px;
+    height: 110px;
+
+
+
+  }
+
+
+
+
+
+  
+  .buyButtons_1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .buyButtons_count {
+    width: 30%;
+  }
+
+  .blueButton1 {
+    width: 40%;
+  }
+
+  /* .blueButton2’leri alta taşıyacağız */
+  .blueButton2 {
+    width: 13%;
+    padding: 6px 0;
+
+  }
+
+  .buyButtons_2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Heart ve refresh butonlarını buyButtons_2’nin soluna çeker */
+  /* .buyButtons_2 .blueButton2 {
+    order: 0;
+    width: 20%;
+  } */
+
+  .redButton {
+    width: 45%;
+    padding: 8px 0;
+    order: 1;
+  
+}
+
+
+.ResponsiveBuy{
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.InformationSection{
+  margin-top: 120%;
+
+  
+}
+.InfoTitle{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ .buyCredit{
+margin-left: -5px;
+} 
+.buyCard{
+  width: 40%;
+  height: auto;
+  
+}
+.buyCreditText{
+  margin-right: 80px;
+}
+
+
+
+.shoe_cards{
+margin-left: 20px;
+}
+
+  .card {
+    width: 48%; /* 2 kart yan yana */
+    height: 300px; /* yaklaşık 3sm */
+    min-width: 200px;
+  }
+
+  .image {
+    height: 75%;
+  }
+
+  .model {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .rating {
+    font-size: 10px;
+  }
+
+  .iconCircle {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+}
+
+ 
+
+

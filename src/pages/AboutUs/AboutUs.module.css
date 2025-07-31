@@ -1,0 +1,926 @@
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope500";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Poppins300";
+    src: url(../../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+
+@font-face {
+  font-family: "Manrope400";
+  src: url(../../assets/fonts/Manrope/static/Manrope-Regular.ttf);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AboutUsHeaderPhoto {
+    position: absolute;
+    width: 1600px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.AboutUsHeader {
+    position: relative;
+    height: 500px; /* Foto yüksekliği kadar belirlenmeli */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ortanın biraz üstü için */
+}
+
+.DarkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* 👈 siyah ve yarı saydam */
+    z-index: 1; /* Görselin üstünde ama yazıların altında olacak */
+}
+
+
+.HeaderTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+ 
+}
+
+
+.HeaderText1 {
+    font-size: 10px;
+    font-family: "Poppins600";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    margin-left: 40%;
+}
+
+.HeaderText2 {
+    font-size: 36px;
+    font-family: "Manrope700";
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.HeaderText3 {
+    font-size: 16px;
+    font-family: "Manrope400";
+    color: white;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.7;
+
+}
+
+.AboutUsPhotoText1{
+    display: flex;
+    margin-top: 100px;
+    gap:40px;
+    margin-left: 2%;
+}
+
+.AboutUsPhotoTextImg{
+        box-shadow: 8px 8px 0px 0px #fac213;
+        width: 700px;
+        height: 544px;
+        transition: transform 0.5s ease;
+
+
+        
+
+}
+
+.AboutUsPhotoTextImg:hover {
+  transform: translateY(-7px);
+
+    transition: transform 0.5s ease;
+
+
+}
+
+
+.AboutUsPhotoTextImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.AboutUsPhotoBtn{
+        padding: 5px 15px;
+        background-color: #00438b;
+        border-color: #00438b;
+        color: white;
+        font-size: 10px;
+    font-family: "Poppins600";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+
+
+
+
+}
+.AboutUsPhotoPar1{
+
+font-family: "Manrope400";
+    color: #161616;
+font-size: 32px;
+    font-style: normal;
+    margin-top: 20px;
+
+
+}
+
+.AboutUsPhotoPar2{
+font-family: "Poppins400";
+    font-size: 14px;
+   color:#343131;
+   line-height: 1.8;
+       margin-top: 20px;
+
+
+}
+.AboutUsPhotoPar3{
+color:#161616;
+font-size:10px;
+letter-spacing:2px;
+font-family:"Poppins800";
+    margin-top: 30px;
+    text-transform: uppercase;
+
+
+}
+
+.AboutUsPhotoPar4{
+color:#00438b;
+font-size: 13px;
+font-family:'Poppins600';
+    margin-top: 30px;
+    letter-spacing: 1.8px;
+
+
+
+}
+
+.AboutUsPhotoTextContext{
+    margin-top: 7%;
+  
+}
+
+.AboutUsPhotoText2{
+    display: flex;
+    margin-top: 100px;
+    gap:40px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+
+
+}
+.AboutUsPhotoTextImg2{
+   
+box-shadow: -8px 8px 0px 0px #fac213;
+        width: 720px;
+        height: 424px;
+    transition: transform 0.5s ease;
+
+
+        
+
+}
+
+.AboutUsPhotoTextImg2:hover{
+  transform: translateY(-7px);
+    transition: transform 0.5s ease;
+}
+
+
+.AboutUsPhotoTextImg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.AboutUsPhotoParSec2{
+font-family: "Poppins400";
+    font-size: 14px;
+   color:#343131;
+       margin-top: 20px;
+              line-height: 1.8;
+
+
+
+}
+
+
+.AboutUsPhotoParSec3{
+font-family: "Poppins400";
+    font-size: 14px;
+   color:#343131;
+       margin-top: 30px;
+       line-height: 1.8;
+
+
+}
+
+.AboutUsPhotoTextContext2{
+
+margin-top: 20px;
+
+}
+
+.PricePolicyTitle{
+background-color:#161616;
+width: 100%;
+height: 350px;
+display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.BackgroundVideoWrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.BackgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5); /* 📌 BÜYÜTÜR ve ortalar */
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+.PricePolicySectionText1{
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-family: "Manrope500";
+    color:#1e96fc;
+    text-transform: uppercase;
+    margin-left: 42%;
+    margin-bottom: 20px;
+}
+
+.PricePolicySectionText2{
+
+
+    font-size: 32px;
+    line-height: 1.2;
+    color: white;
+    font-family: "Manrope500";
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.PricePolicySectionText3{
+font-family: "Poppins400";
+color: #7a7a7a;
+    font-size: 14px;
+       line-height: 1.8;
+           margin-left: 25px;
+
+
+}
+
+.AboutUsPhotoTitle{
+    margin-top: 50px;
+
+
+
+}
+
+.AboutUsPhotoTitleBlue{
+
+    background-color: #00438b;
+   width: 720px;
+   height: 130px;
+   padding: 20px;
+    font-size: 22px;
+        font-family: "Poppins300";
+
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    margin: 0 auto;
+    margin-top: -65px; /* 👈 Video’nun yarısına taşır */
+    z-index: 2;
+    position: relative;
+     /* 👈 Üste gelsin */
+}
+
+.comment_container{
+  /* margin-top: 100px;
+  margin-bottom: 16.5%; */
+}
+
+
+
+.comment_text_1{
+  
+font-size: 18px;
+    line-height: 1.75;
+    font-style: normal;
+    font-family: "Poppins400";
+    text-align: center;
+    position: relative;
+    color: #343131;;
+
+
+
+}
+.photoTitle_img{
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+
+
+
+}
+.photoText_1 {
+  color:#161616;
+      font-size: 16px;
+    line-height: 1.6;
+    font-family: "Manrope400";
+      position: relative;
+
+
+
+}
+
+.photoText_2{
+    font-family: "Poppins400";
+    font-size: 14px;
+          position: relative;
+          color: black;
+
+
+}
+
+.comment_photoText{
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  padding-top: 2.5%;
+  margin-bottom: 40px;
+}
+.comment_context{
+padding-top: 6%;
+
+}
+
+.AboutUsReviews{
+
+    margin-top: 60px;
+    background-color: #f7f7f8;
+    width: 100%;
+    height: 680px;
+}
+
+
+.AboutUsReviewsTitle{
+    font-size: 26px;
+    line-height: 1.3;
+    color:#161616;
+    font-family: "Manrope500";
+    padding-top: 100px;
+    margin-left: 20px;
+
+}
+
+.AboutUsReviewsSection1{
+
+    width: 480px;
+    height: 380px;
+    border: 1px solid #e1e2e3;
+}
+.AboutUsReviewPhoto1{
+
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.AboutUsReviewText1{
+    font-size: 16px;
+    font-family: "Manrope700";
+    color:#161616;
+
+}
+
+
+.VerifiedSectionText{
+
+    font-size: 14px;
+    font-family: "Poppins400";
+    color: #343131;
+
+}
+
+.VerifiedPhoto{
+
+    width: 22px;
+    height: 22px;
+}
+
+.AboutUsAdmin{
+
+}
+.AboutUsReviewsContext_1{
+    display: flex;
+    gap: 20px;
+}
+
+.VerifiedSection{
+    display: flex;
+    gap: 10px;
+}
+
+.AboutUsReviewsContext_1{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.AboutUsRating{
+    color: #fac213;
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.AboutUsRatingText{
+    color: #161616;
+    font-size: 14px;
+    font-family: "Poppins400";
+    margin-top: 2px;
+
+}
+
+.AboutUsReviewText3{
+ font-size: 14px;
+    font-family: "Poppins400";
+color:#484e51 ;
+   margin-left: 20px;
+    margin-top: 15px;
+
+
+
+}
+
+.AboutUsReviewText4{
+ font-size: 11px;
+    font-family: "Poppins400";
+    color:#7a7a7a;
+    margin-left: 20px;
+    margin-top: 13px;
+
+
+}
+
+.AboutUsReviewPhotoText{
+
+    display: flex;
+    gap: 50px;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.AboutUsReviewPhotoText2{
+   display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+
+.AboutUsReviewPhoto2{
+
+    height: 50px;
+    width: 50px;
+
+}
+
+.AboutUsReviewText5{
+    font-size: 14px;
+    font-family: "Poppins500";
+    color:#161616;
+    margin-top: 16px;
+}
+
+.AboutUsReviewsSection1{
+
+    margin-top: 50px;
+}
+
+.AboutUsReviewsSections{
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+
+
+.TeamTitleText1{
+    font-size: 30px;
+    letter-spacing: 1.6px;
+    line-height: 1.3;
+    color:#161616;
+    font-family: "Manrope500";
+}
+
+.TeamTitleText2{
+     font-size: 14px;
+    font-family: "Poppins400";
+    color:#484e51;
+
+
+
+}
+
+.TeamTitle{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   align-items: center;
+   margin-top: 100px;
+}
+
+.AboutUsTeamPhoto{
+width:348px;
+height:427px;
+object-fit: cover;
+border-radius: 30px 30px 0 0;
+    border-style: solid;
+    border-width: 0 0 4px;
+    border-color: #00438b;
+
+
+
+}
+
+
+.AboutUsTeamText1{
+
+font-size: 16px;
+color:#161616;
+font-family: "Poppins400";
+margin-top: 17px;
+
+
+
+}
+
+.AboutUsTeamText2{
+    font-size: 10px;
+    font-family: "Poppins600";
+    letter-spacing: 1.8px;
+    color:#7a7a7a;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+
+}
+
+.TeamIcons{
+
+ margin-top: 20px;
+}
+
+
+.AboutUsTeams{
+
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.AboutUsTeamSection {
+    margin-bottom: 120px;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* 1440px altı */
+@media (max-width: 1440px) {
+  .AboutUsHeaderPhoto {
+    width: 100%;
+    height: auto;
+  }
+  .HeaderTexts {
+    margin-left: 15%;
+    text-align: center;
+  }
+  .HeaderText1 {
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .HeaderText2 {
+    font-size: 32px;
+  }
+  .HeaderText3 {
+    font-size: 14px;
+  }
+  .AboutUsPhotoText1,
+  .AboutUsPhotoText2 {
+    margin-left: 0;
+    gap: 30px;
+  }
+  .AboutUsPhotoTextImg,
+  .AboutUsPhotoTextImg2 {
+    width: 80%;
+    height: auto;
+  }
+  .AboutUsPhotoBtn {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+  .PricePolicyTitle {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .BackgroundVideoWrapper iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .AboutUsPhotoTitleBlue {
+    width: 85%;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .comment_photoText {
+    gap: 25px;
+  }
+  .photoTitle_img {
+    width: 90px;
+    height: 90px;
+  }
+  .AboutUsReviewsSections {
+    gap: 25px;
+  }
+  .AboutUsReviewsSection1 {
+    width: 45%;
+  }
+  .AboutUsTeams {
+    gap: 25px;
+  }
+  .AboutUsTeamPhoto {
+    width: 90%;
+    height: auto;
+  }
+  .TeamTitleText1 {
+    font-size: 28px;
+  }
+}
+
+/* 1024px altı */
+@media (max-width: 1024px) {
+  .HeaderTexts {
+    margin-left: 10%;
+  }
+  .HeaderText2 {
+    font-size: 28px;
+  }
+  .HeaderText3 {
+    font-size: 13px;
+  }
+  .AboutUsPhotoText1,
+  .AboutUsPhotoText2 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .AboutUsPhotoTextImg,
+  .AboutUsPhotoTextImg2 {
+    width: 90%;
+    height: auto;
+  }
+  .AboutUsPhotoBtn {
+    font-size: 9px;
+    padding: 4px 10px;
+  }
+  .PricePolicyTitle {
+    padding: 50px 25px;
+  }
+  .BackgroundVideoWrapper iframe {
+    height: 350px;
+  }
+  .AboutUsPhotoTitleBlue {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .comment_photoText {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .photoTitle_img {
+    width: 80px;
+    height: 80px;
+  }
+  .AboutUsReviewsSections {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  .AboutUsReviewsSection1 {
+    width: 100%;
+  }
+  .AboutUsTeams {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  .AboutUsTeamPhoto {
+    width: 100%;
+    height: auto;
+  }
+  .TeamTitleText1 {
+    font-size: 26px;
+  }
+}
+
+/* 768px altı */
+@media (max-width: 768px) {
+  .HeaderText2 {
+    font-size: 24px;
+  }
+  .HeaderText3 {
+    font-size: 12px;
+  }
+  .AboutUsPhotoPar1 {
+    font-size: 24px;
+  }
+  .AboutUsPhotoPar2,
+  .AboutUsPhotoParSec2,
+  .AboutUsPhotoParSec3 {
+    font-size: 12px;
+  }
+  .AboutUsPhotoBtn {
+    font-size: 8px;
+    padding: 3px 8px;
+  }
+  .AboutUsReviewsTitle {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  .AboutUsPhotoTitleBlue {
+    font-size: 12px;
+  }
+  .BackgroundVideoWrapper iframe {
+    height: 280px;
+  }
+}
+
+/* 400px altı (mobil) */
+  @media (max-width: 500px) {
+
+  .AboutUsHeaderPhoto {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+        max-width: 100vw;
+        object-fit: cover;
+
+  }
+  .AboutUsHeader{
+    width: 100%;
+    height: auto;
+
+  }
+  .HeaderText2 {
+    font-size: 20px;
+  }
+  .HeaderText3 {
+    font-size: 11px;
+  }
+  .AboutUsPhotoPar1 {
+    font-size: 20px;
+  }
+  .AboutUsPhotoPar2,
+  .AboutUsPhotoParSec2,
+  .AboutUsPhotoParSec3 {
+    font-size: 10px;
+  }
+  .AboutUsPhotoBtn {
+    font-size: 7px;
+    padding: 2px 6px;
+  }
+  .AboutUsReviewsTitle {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .AboutUsPhotoTitleBlue {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .BackgroundVideoWrapper iframe {
+    height: 220px;
+  }
+  .AboutUsPhotoTexts{
+
+    padding-top: 65%;
+  }
+  .AboutUsPhotoTextContext{
+    position: relative;
+    text-align: center;
+
+ 
+  }
+} 
+

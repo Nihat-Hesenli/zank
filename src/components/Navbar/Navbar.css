@@ -21,7 +21,7 @@
 
 
 
-
+/* 
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@
 
 .top-navbar {
 background-color: #00438b;
-  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) */
+  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +73,7 @@ background-color: #00438b;
 
 .top-navbar-right a:hover {
   text-decoration: underline;
-}
+} */
 
 
 
@@ -184,12 +184,22 @@ background-color: #00438b;
     text-decoration: none;
         margin-left: 6%;
         margin-top: 1%;
+        flex-wrap: nowrap; 
 
 
 
   
 
 
+}
+
+
+
+
+
+
+.navbar_left_text a {
+  white-space: nowrap;  /* Link içinde kelimeler satıra sığmasa bile bölünmez */
 }
 
 .navbar_left_text a {
@@ -232,6 +242,17 @@ text-transform: uppercase;
     gap: 17px;
     align-items: center;
 
+}
+
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 
