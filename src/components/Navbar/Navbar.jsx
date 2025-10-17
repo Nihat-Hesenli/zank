@@ -13,12 +13,21 @@ import { Link } from 'react-router-dom';
 import { Card } from '../Card/Card';
 import { useState } from 'react';
 
+import { useSelector, useDispatch } from "react-redux";
+import { setCartOpen } from "../../redux/cartSlice";
 
 
-export const Navbar = ({ handleRemoveItem, cartItems, setCartItems,  isCartOpen, setCartOpen }) => {
+
+
+
+export const Navbar = () => {
     const [showCart, setShowCart] = useState(false);
+    const cartItems = useSelector(state => state.cart.cartItems);
+    const isCartOpen = useSelector(state => state.cart.isCartOpen);
 
-    
+    const dispatch = useDispatch();
+
+
 
 
     return (
@@ -45,13 +54,13 @@ export const Navbar = ({ handleRemoveItem, cartItems, setCartItems,  isCartOpen,
                         <div className="navbar_left_text">
                             <Link to="/">HOME</Link>
                             <Link to="/shop">SHOP</Link>
-                            <Link to="/product">PRODUCT</Link>
+                            {/* <Link to="/product">PRODUCT</Link> */}
                             <Link to="/aboutUs">ABOUT US</Link>
-                             <Link to="/contact">CONTACT</Link>
+                            <Link to="/contact">CONTACT</Link>
 
                         </div>
 
-                        
+
 
 
 
@@ -71,8 +80,8 @@ export const Navbar = ({ handleRemoveItem, cartItems, setCartItems,  isCartOpen,
                             style={{ cursor: "pointer" }}
                             onClick={() => setShowSearch(true)} // Arama kutusunu göster
                         />
-                       
-                        <HiOutlineShoppingBag fontSize={25} color="black" onClick={() => setShowCart(true)} style={{ cursor: "pointer" }} />
+
+                        <HiOutlineShoppingBag fontSize={25} color="black" onClick={() => dispatch(setCartOpen(true))} style={{ cursor: "pointer" }} />
                         <VscHeart fontSize={25} color="black" />
                         <SlRefresh fontSize={20} color="black" />
                         <FaRegUser fontSize={21} color="black" />
@@ -91,10 +100,16 @@ export const Navbar = ({ handleRemoveItem, cartItems, setCartItems,  isCartOpen,
                 </div>
 
             </div>
-            {
-                <Card   handleRemoveItem={handleRemoveItem} cartItems={cartItems} isOpen={showCart} onClose={() => setShowCart(false)} />
-                
-            }
+
+
+            {isCartOpen && (
+                <Card
+                    isOpen={isCartOpen}
+                    onClose={() => dispatch(setCartOpen(false))}
+                    cartItems={cartItems}
+                />
+            )}
+
         </>
 
 

@@ -13,9 +13,16 @@ import FilterSideBar from "../../components/FilterSideBar";
 import { Card } from "../../components/Card/Card"
 import { useOutletContext } from "react-router-dom";
 import hotDeal from '../../assets/images/hot-deal.png'
+import { useRef } from "react";
 
 
 export const ShopPage = () => {
+
+  const productsRef = useRef(null);
+
+   const handleScrollToProducts = () => {
+    productsRef.current?.scrollIntoView({ behavior: "smooth" }); // 🔹 yumuşak kaydırma
+  };
 
   const [visibleCount, setVisibleCount] = useState(12);
   const [showCart, setShowCart] = useState(false);
@@ -74,7 +81,7 @@ export const ShopPage = () => {
                 For the terms of the campaign, see the description page.
               </div>
             </div>
-            <button className={styles.ShopPage_PhotoCard_button}>See More Products</button>
+            <button  onClick={handleScrollToProducts} className={styles.ShopPage_PhotoCard_button}>See More Products</button>
           </div>
 
 
@@ -131,7 +138,7 @@ export const ShopPage = () => {
             </div>
           </div>
 {/* "svgFeatured zank-svg-icon"  */}
-          <div className={styles.shopShoes_section}>
+          <div ref={productsRef} className={styles.shopShoes_section}>
 
 
             <p className={styles.shopShoes_Text}>

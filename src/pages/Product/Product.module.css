@@ -580,7 +580,7 @@ font-size: 14px;
 
 }
 
-.blueButton1{
+/* .blueButton1{
     background-color: #00438b;
     border-color: #00438b;
     color:white;
@@ -591,7 +591,66 @@ font-size: 14px;
 
 
 
+} */
+
+.blueButton1 {
+  background-color: #00438b;
+  border: 1px solid #00438b;
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins400";
+  padding: 6.5px 60px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease; /* smooth geçişler için */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
 }
+
+/* Hover efekti */
+.blueButton1:hover {
+  background-color: #003375;
+  border-color: #003375;
+}
+
+/* Basılı (clicked) hissi */
+.blueButton1:active {
+  transform: translateY(2px); /* butonu hafif aşağı indirir */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
+  background-color: #002a5a; /* biraz daha koyu */
+  border-color: #002a5a;
+}
+
+
+.blueButton2 {
+  background-color: #00438b;
+  border: 1px solid #00438b;
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins400";
+  padding: 6.5px 60px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease; /* smooth geçişler için */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
+}
+
+/* Hover efekti */
+.blueButton2:hover {
+  background-color: #003375;
+  border-color: #003375;
+}
+
+/* Basılı (clicked) hissi */
+.blueButton2:active {
+  transform: translateY(2px); /* butonu hafif aşağı indirir */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
+  background-color: #002a5a; /* biraz daha koyu */
+  border-color: #002a5a;
+}
+
+
 .blueButton2{
         background-color: #00438b;
     border-color: #00438b;
@@ -628,6 +687,40 @@ font-size: 14px;
 
 
 }
+
+.redButton {
+  background-color: #e60b09;
+  border: 1px solid #e60b09;
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins400";
+  padding: 6px 245px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease; /* yumuşak geçişler */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
+}
+
+/* Hover efekti */
+.redButton:hover {
+  background-color: #b80a07;
+  border-color: #b80a07;
+}
+
+/* Basılı (clicked) hissi */
+.redButton:active {
+  transform: translateY(2px); /* butonu hafif aşağı indirir */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
+  background-color: #990806; /* biraz daha koyu */
+  border-color: #990806;
+}
+
+
+
+
+
+
+
 
 .buyDeliveryText{
 font-size: 14px;

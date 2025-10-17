@@ -3,8 +3,9 @@ import { Navbar } from "../Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import { Footer } from "../Footer/Footer";
 
-export const MainLayout = ({  handleRemoveItem, cartItems, setCartItems, isCartOpen, setCartOpen }) => {
+export const MainLayout = ({ increaseItem, decreaseItem,  handleRemoveItem, cartItems, setCartItems, isCartOpen, setCartOpen }) => {
   const [showSearch, setShowSearch] = useState(false);
+  const [showCart, setShowCart] = useState(true);
 
   return (
     <>
@@ -15,6 +16,9 @@ export const MainLayout = ({  handleRemoveItem, cartItems, setCartItems, isCartO
         isCartOpen={isCartOpen}
         setCartOpen={setCartOpen} 
          handleRemoveItem= { handleRemoveItem}  
+         setShowCart={setShowCart}
+         increaseItem={increaseItem}
+         decreaseItem={decreaseItem}
         />
       <Outlet context={{ showSearch, setShowSearch }} />
       <Footer />

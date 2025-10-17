@@ -49,6 +49,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import { Navigation, Autoplay } from 'swiper/modules';
+import { useNavigate } from "react-router-dom"; 
+import { useRef } from "react";
+
+  
 
 
 
@@ -57,6 +61,20 @@ import { Navigation, Autoplay } from 'swiper/modules';
 
 
 export const HomePage = () => {
+
+    const shoesRef = useRef(null);
+
+     const handleScrollToProducts = () => {
+     shoesRef.current?.scrollIntoView({ behavior: "smooth" }); // 🔹 yumuşak kaydırma
+  };
+
+
+     const navigate = useNavigate();
+
+
+    const handleStartShopping = () => {
+    navigate("/shop"); 
+  };
 
     return (
         <>
@@ -79,12 +97,12 @@ export const HomePage = () => {
                     </div>
 
                     <div className={styles.header_buttons}>
-                        <div className={styles.header_button_1}>
+                        <button onClick={handleScrollToProducts} className={styles.header_button_1}>
                             Check Collection
-                        </div>
-                        <div className={styles.header_button_2}>
+                        </button>
+                        <button onClick={handleStartShopping} className={styles.header_button_2}>
                             Shop Now
-                        </div>
+                        </button>
 
 
                     </div>
@@ -140,7 +158,7 @@ export const HomePage = () => {
             </div>
 
 
-            <div className={styles.winter_section}>
+            <div ref={shoesRef}  className={styles.winter_section}>
 
                 <div className={styles.winter_head}>
                     <h3 className={styles.winter_head_1}>Winter Collection</h3>
@@ -226,217 +244,6 @@ export const HomePage = () => {
 
 
 
-
-
-
-                {/* 
-
-                     {
-                        shoesData.map((shoe) => {
-                            return (
-                                <div className={styles.card}>
-                                    <img src={shoe.image} className={styles.image} />
-
-                                    <div className={styles.saleTag}>{shoe.etiquette}</div>
-                                    <div className={styles.discountTag}>%{shoe.percentage}</div>
-
-                                    <div className={styles.info}>
-                                        <h3 className={styles.model}>{shoe.title}</h3>
-                                        <p className={styles.price}>
-                                            {
-                                                shoe.price !== undefined ? (
-                                                    // Sadece price varsa
-                                                    <>
-                                                        <span className={styles.oldPrice}>
-                                                            ${shoe.price.toFixed(2)}
-                                                        </span>
-                                                        <span>
-                                                            ${shoe.price - (shoe.price * shoe.percentage / 100)}
-                                                        </span>
-                                                    </>
-                                                ) : <>${shoe.minPrice.toFixed(2)} - ${shoe.maxPrice.toFixed(2)}</>
-                                            }
-                                        </p>
-
-                                    </div>
-
-                                    <div className={styles.rating}>
-
-                                        <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-                                    </div>
-
-                                    
-
-
-
-                                    <div className={styles.iconsOverlay}>
-                                        <div className={styles.iconCircle}><VscHeart /></div>
-                                        <div className={styles.iconCircle}> <SlRefresh /></div>
-                                        <div className={styles.iconCircle}><IoEyeOutline /></div>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }  */}
-                {/*  <div className={styles.card}>
-                        <img src={shoeImg} className={styles.image} />
-
-                        <div className={styles.saleTag}>SALE</div>
-                        <div className={styles.discountTag}>%9</div>
-
-                        <div className={styles.info}>
-                            <h3 className={styles.model}>Nike Zoom</h3>
-                            <p className={styles.price}>$50.00 - $80.00</p>
-                        </div>
-
-                        <div className={styles.rating}>
-
-                            <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <div className={styles.iconsOverlay}>
-                            <div className={styles.iconCircle}><VscHeart /></div>
-                            <div className={styles.iconCircle}> <SlRefresh /></div>
-                            <div className={styles.iconCircle}><IoEyeOutline /></div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card}>
-                        <img src={shoeImg} className={styles.image} />
-
-                        <div className={styles.saleTag}>SALE</div>
-                        <div className={styles.discountTag}>%9</div>
-
-                        <div className={styles.info}>
-                            <h3 className={styles.model}>Nike Zoom</h3>
-                            <p className={styles.price}>$50.00 - $80.00</p>
-                        </div>
-
-                        <div className={styles.rating}>
-
-                            <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <div className={styles.iconsOverlay}>
-                            <div className={styles.iconCircle}><VscHeart /></div>
-                            <div className={styles.iconCircle}> <SlRefresh /></div>
-                            <div className={styles.iconCircle}><IoEyeOutline /></div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card}>
-                        <img src={shoeImg} className={styles.image} />
-
-                        <div className={styles.saleTag}>SALE</div>
-                        <div className={styles.discountTag}>%9</div>
-
-                        <div className={styles.info}>
-                            <h3 className={styles.model}>Nike Zoom</h3>
-                            <p className={styles.price}>$50.00 - $80.00</p>
-                        </div>
-
-                        <div className={styles.rating}>
-
-                            <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <div className={styles.iconsOverlay}>
-                            <div className={styles.iconCircle}><VscHeart /></div>
-                            <div className={styles.iconCircle}> <SlRefresh /></div>
-                            <div className={styles.iconCircle}><IoEyeOutline /></div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card}>
-                        <img src={shoeImg} className={styles.image} />
-
-                        <div className={styles.saleTag}>SALE</div>
-                        <div className={styles.discountTag}>%9</div>
-
-                        <div className={styles.info}>
-                            <h3 className={styles.model}>Nike Zoom</h3>
-                            <p className={styles.price}>$50.00 - $80.00</p>
-                        </div>
-
-                        <div className={styles.rating}>
-
-                            <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <div className={styles.iconsOverlay}>
-                            <div className={styles.iconCircle}><VscHeart /></div>
-                            <div className={styles.iconCircle}> <SlRefresh /></div>
-                            <div className={styles.iconCircle}><IoEyeOutline /></div>
-                        </div>
-                    </div>
-
-                    <div className={styles.card}>
-                        <img src={shoeImg} className={styles.image} />
-
-                        <div className={styles.saleTag}>SALE</div>
-                        <div className={styles.discountTag}>%9</div>
-
-                        <div className={styles.info}>
-                            <h3 className={styles.model}>Nike Zoom</h3>
-                            <p className={styles.price}>$50.00 - $80.00</p>
-                        </div>
-
-                        <div className={styles.rating}>
-
-                            <span className={styles.star}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />  </span>
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <div className={styles.iconsOverlay}>
-                            <div className={styles.iconCircle}><VscHeart /></div>
-                            <div className={styles.iconCircle}> <SlRefresh /></div>
-                            <div className={styles.iconCircle}><IoEyeOutline /></div>
-                        </div>
-                    </div> */ }
 
 
 

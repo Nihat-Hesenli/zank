@@ -21,19 +21,34 @@ const App = () => {
   setCartItems(prev => prev.filter(item => item.id !== id));
 };
 
+const increaseItem = (id) => {
+  setCartItems(cartItems.map(item => 
+    item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+  ));
+};
+
+const decreaseItem = (id) => {
+  setCartItems(cartItems.map(item => 
+    item.id === id 
+      ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 } 
+      : item
+  ));
+};
+
+
 
 
   return (
     <BrowserRouter>
  
       <Routes>
-        <Route path="/" element={<MainLayout   handleRemoveItem={handleRemoveItem}    cartItems={cartItems}
+        <Route path="/" element={<MainLayout increaseItem={increaseItem} decreaseItem={decreaseItem}   handleRemoveItem={handleRemoveItem}    cartItems={cartItems}
       setCartItems={setCartItems}
       isCartOpen={isCartOpen}
       setCartOpen={setCartOpen} />}>
           <Route index element={<HomePage />} />
           <Route  path="/shop"    element={<ShopPage/> }/>
-          <Route path="/product/:id" element={<Product handleRemoveItem ={handleRemoveItem}   cartItems={cartItems} setCartItems={setCartItems}  setCartOpen={setCartOpen} />}/>
+          <Route path="/product/:id" element={<Product increaseItem={increaseItem} decreaseItem={decreaseItem}   handleRemoveItem ={handleRemoveItem}   cartItems={cartItems} setCartItems={setCartItems}  setCartOpen={setCartOpen} />}/>
           <Route  path="/AboutUs"    element={<AboutUs /> }/>
           <Route  path="/Contact"    element={<Contact /> }/>
 

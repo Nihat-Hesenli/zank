@@ -72,13 +72,31 @@ import { shoesData } from "../../constants/Variables";
 
 
 
-
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, increaseItem, decreaseItem, setCartOpen } from "../../redux/cartSlice";
 
 
 import styles from "../Product/Product.module.css"
 
 
-export const Product = ({ cartItems, setCartItems, setCartOpen }) => {
+export const Product = () => {
+
+    const dispatch = useDispatch();
+  const cartItems = useSelector(state => state.cart.cartItems);
+
+
+  const handleAdd = () => {
+    dispatch(addToCart(product));
+    dispatch(setCartOpen(true));                
+  };
+
+
+   const handleIncrease = (id) => dispatch(increaseItem(id));
+  const handleDecrease = (id) => dispatch(decreaseItem(id));
+
+
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -149,27 +167,65 @@ export const Product = ({ cartItems, setCartItems, setCartOpen }) => {
 
     };
 
-    const handleAddToCart = () => {
-        const newItem = {
-            id: product.id,
-            title: product.title,
-            image: product.imageBig,
-            price: product.price,
-            minPrice: product.minPrice,
-            maxPrice: product.maxPrice,
-            percentage: product.percentage,
-        };
-
-        setCartItems(prev => [...prev, newItem]);
-        setCartOpen(true);
-    };
-
-    const handleRemoveItem = (id) => {
-        setCartItems(cartItems.filter(item => item.id !== id));
 
 
+ 
+    //     setCartItems(prevItems => {
+    //         let newItems = [];
+    //         let isFound = false;
 
-    };
+    //         // Mevcut cartItems içinde ürünü ara
+    //         for (let i = 0; i < prevItems.length; i++) {
+    //             if (prevItems[i].id === product.id) {
+    //                 isFound = true;
+    //                 // quantity artır
+    //                 newItems.push({ ...prevItems[i], quantity: prevItems[i].quantity + 1 });
+    //             } else {
+    //                 newItems.push(prevItems[i]);
+    //             }
+    //         }
+
+    //         // Eğer ürün bulunmadıysa, yeni ekle
+    //         if (!isFound) {
+    //             newItems.push({
+    //                 id: product.id,
+    //                 title: product.title,
+    //                 image: product.imageBig,
+    //                 price: product.price,
+    //                 minPrice: product.minPrice,
+    //                 maxPrice: product.maxPrice,
+    //                 percentage: product.percentage,
+    //                 quantity: 1
+    //             });
+    //         }
+
+    //         return newItems;
+    //     });
+
+    //     setCartOpen(true);
+    // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     return (
         <>
@@ -365,8 +421,29 @@ export const Product = ({ cartItems, setCartItems, setCartOpen }) => {
 
                                     <div className={styles.buyButtons}>
                                         <div className={styles.buyButtons_1}>
-                                            <button className={styles.buyButtons_count}>1</button>
-                                            <button onClick={handleAddToCart} className={styles.blueButton1}>Add to cart</button>
+                                            <button  className={styles.buyButtons_count}>{cartItems.find(item => item.id === product.id)?.quantity || 0}</button>
+                                            <button
+                                            
+                                                onClick={()=>{
+                                                    
+                                                       dispatch(addToCart({...product, image: product.imageBig}));
+
+                                                    
+                                                  
+                                                }}
+
+
+                                                className={styles.blueButton1}>Add to cart </button>
+    
+
+
+
+
+
+
+
+
+
 
 
                                             <button className={styles.blueButton2}><VscHeart fontSize={18} color="white" /></button>
@@ -660,7 +737,7 @@ export const Product = ({ cartItems, setCartItems, setCartOpen }) => {
                                 slidesPerView: 4,
                                 spaceBetween: 20,
                             },
-                            
+
                         }}
                     >
                         {shoesData.map((shoe, index) => (
@@ -736,7 +813,17 @@ export const Product = ({ cartItems, setCartItems, setCartOpen }) => {
     );
 
 
+
+
+
 }
+
+
+
+
+
+
+
 
 
 
