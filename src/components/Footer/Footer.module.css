@@ -107,7 +107,7 @@
 }
 
 .email_input, .email_btn {
-  height: 50px; /* istediğin yüksekliğe göre ayarla */
+  height: 50px; 
   box-sizing: border-box;
 }
 
@@ -125,7 +125,7 @@
   width: 100%;
 
   display: flex;
-  align-items: center; /* dikey ortala */
+  align-items: center; 
 }
 
 
@@ -159,15 +159,15 @@
 
 .footerTexts {
   display: flex;
-  align-items: center; /* dikey ortalama */
-  gap: 160px;            /* div’ler arası yatay boşluk */
-  padding-left: 0.5cm; /* sol boşluk */
+  align-items: center; 
+  gap: 160px;          
+  padding-left: 0.5cm; 
   height: 100%;     
   margin-bottom: 16px;
 }
 .footerPhoneButtons {
   display: flex;
-  gap: 0; /* arada boşluk yok */
+  gap: 0; 
 }
 
 .footerRedBtn, .footerGreenBtn {
@@ -181,7 +181,7 @@
   justify-content: center;
   height: 58px;
   
-  padding: 15px 25px; /* padding’i azalt */
+  padding: 15px 25px; 
 }
 
 .footerRedBtn {
@@ -198,7 +198,7 @@
   color: green;
    
   padding-left: 0px;
-  padding-right: 0px; /* İkon ve metin arası boşluk */
+  padding-right: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -263,7 +263,6 @@
 
 
 
-/* 1440px altı için */
 @media (max-width: 1440px) {
   .FooterEmail_Section {
     gap: 30px;
@@ -288,7 +287,6 @@
   }
 }
 
-/* 1024px altı için */
 @media (max-width: 1024px) {
   .FooterEmail_Section {
     flex-direction: column;
@@ -350,12 +348,11 @@
   }
 }
 
-/* 768px altı için */
 @media (max-width: 768px) {
   .footerTexts {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
-    gap: 20px 40px; /* satır ve sütun arası boşluk */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px; 
     padding-right: 20%;
   }
 
@@ -375,7 +372,7 @@
     padding: 0 20px;
     border-radius: 5px;
     font-size: 16px;
-    flex-shrink: 0; /* küçülmeyi engelle */
+    flex-shrink: 0; 
   }
 
   .footerGreenBtn svg {
@@ -393,5 +390,4 @@
 
   }
 
-  /* Diğer önceki mobil ayarlar korunabilir */
 }

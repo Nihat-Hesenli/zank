@@ -85,7 +85,7 @@ import styles from "../Product/Product.module.css"
 export const Product = () => {
     const { id: productId } = useParams();
 
-    // Tek bir product değişkeni kullanıyoruz
+
     const product = shopShoesData.find(item => item.id === productId);
 
     if (!product) return <div>Ürün bulunamadı. (id: {productId})</div>;

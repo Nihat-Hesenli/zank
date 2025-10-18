@@ -21,59 +21,6 @@
 
 
 
-/* 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-.top-navbar {
-background-color: #00438b;
-  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-}
-
-.top-navbar-left {
-
-    font-size: 10px;
-    font-weight:800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    font-style:normal;
-    line-height: 1.8;
-    font-family: "Poppins800";
-
-
-}
-
-.top-navbar-right {
-  display: flex;
-  gap: 25px;
-}
-
-.top-navbar-right a {
-      position: relative; 
-  font-size: 10px;
-    font-weight:800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    font-style:normal;
-    line-height: 1.8;
-    font-family: "Poppins800";
- 
-
-}
-
-.top-navbar-right a:hover {
-  text-decoration: underline;
-} */
 
 
 
@@ -93,7 +40,7 @@ background-color: #00438b;
 
 .top-navbar {
 background-color: #00438b;
-  height: 45px; /* Yaklaşık 1 cm (96dpi ekranlarda) */
+  height: 45px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,8 +76,8 @@ background-color: #00438b;
   font-style: normal;
   line-height: 1.8;
   font-family: "Poppins800";
-  padding-left: 12px; /* Burayı ekledik */
-  display: inline-block; /* Daha sağlıklı pozisyonlama için */
+  padding-left: 12px; 
+  display: inline-block; 
 }
 
 .top-navbar-right a:not(:first-child)::before {
@@ -199,21 +146,14 @@ background-color: #00438b;
 
 
 .navbar_left_text a {
-  white-space: nowrap;  /* Link içinde kelimeler satıra sığmasa bile bölünmez */
+  white-space: nowrap;  
 }
 
-.navbar_left_text a {
-  color: black;
-  text-decoration: none;
-  font-family: "Poppins500";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  /* spacing */
-}
+
+
 
 .navbar_left_text a:hover {
-  color: #333; /* istersen hover rengini de biraz koyulaştırabilirsin */
+  color: #333; 
 }
 
 

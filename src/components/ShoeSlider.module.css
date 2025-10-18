@@ -9,19 +9,18 @@
 .sliderWrapper {
   display: flex;
   gap: 20px;
-  overflow-x: auto; /* Yatay scroll ekle */
+  overflow-x: auto; 
   width: 100%;
-  max-width: 900px; /* İstersen burayı ayarla */
-  scroll-behavior: smooth; /* Kaydırma animasyonu */
+  max-width: 900px; 
+  scroll-behavior: smooth; 
 }
 
-/* Kartların slider içindeki maksimum genişliği */
 .sliderWrapper > * {
-  flex-shrink: 0; /* Kart küçülmesin */
-  max-width: 200px; /* Kart genişliğini sınırla (orijinal genişlik) */
+  flex-shrink: 0; 
+  max-width: 200px; 
 }
 
-/* Ok butonları */
+
 .arrowLeft,
 .arrowRight {
   background: none;

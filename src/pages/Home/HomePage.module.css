@@ -46,7 +46,7 @@
   body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* ✅ Sağa scroll engellenir */
+  overflow-x: hidden; 
 }
 
 .oldPrice{
@@ -980,36 +980,19 @@ font-family: "Manrope500";
 
 }
 
-/*.zankInsta_1{
-
-  height: 230px;
-  width: 230px;
-  border-radius: 5px;   
-            
-
-}   */         
+        
 
 .zankInsta_1:hover .zankInsta_photos  {
   transform: scale(1.5);
   opacity: 0.9;
   transition: transform 0.3s ease, opacity 0.3s ease; 
 }
-/*.zankInsta_photos{ 
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  
-  
-
-} */
 
 
 
 
 
-/* Diğer medya sorguları için de flex-shrink:1 olacak şekilde düzenle */
+
 
 @media (max-width: 1024px) {
   .shoe_cards > div.card {
@@ -1031,7 +1014,6 @@ font-family: "Manrope500";
   }
 }
 
-/* Küçük ekranlarda 1 card */
 @media (max-width: 480px) {
   .shoe_cards > div.card {
     flex: 0 1 100%;
@@ -1062,15 +1044,14 @@ font-family: "Manrope500";
 
 
 
-/* 768px altı: tek sütun, 4 satır */
 @media (max-width: 768px) {
   .cards_container {
-    grid-template-columns: 1fr; /* tek sütun */
+    grid-template-columns: 1fr; 
   }
   
   .card {
     width: 100%;
-    height: auto; /* istersen yükseklik ayarla */
+    height: auto; 
   }
 }
   @media (max-width:1024px) {
@@ -1119,15 +1100,15 @@ font-family: "Manrope500";
 @media (max-width: 768px) {
   .dashedFrame {
     display: flex;
-    flex-direction: column;  /* Alt alta diz */
-    align-items: center;     /* Ortala yatayda */
+    flex-direction: column;  
+    align-items: center;     
     justify-content: center;
     width: 95%;
     height: auto;
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
-    gap: 10px;  /* Elemanlar arası boşluk */
+    gap: 10px;  
   }
 
    .dashedFrame_text_1,
@@ -1174,23 +1155,22 @@ font-family: "Manrope500";
 } 
 .currentPhotoCards {
   display: flex;
-  flex-wrap: nowrap; /* default: satırda sığdırmaya çalış */
+  flex-wrap: nowrap; 
   gap: 20px;
   justify-content: center;
   margin-bottom: 200px;
-  overflow-x: hidden; /* scroll'u gizle (önlem) */
+  overflow-x: hidden; 
 }
 
-/* 1440px ve altı (büyük ekranlar için) */
 @media (max-width: 1440px) {
   .currentPhotoCards {
-    flex-wrap: wrap; /* sarma izni ver */
+    flex-wrap: wrap; 
     justify-content: center;
     padding: 0 20px;
   }
   
   .currentPhotoCard_1 {
-    flex: 1 1 calc(25% - 20px); /* 4 sütun gibi davran */
+    flex: 1 1 calc(25% - 20px); 
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -1201,11 +1181,10 @@ font-family: "Manrope500";
   .currentPhoto_wrapper,
   .current_context {
     width: 100%;
-    max-width: 350px; /* maksimum 350px ama küçülebilir */
+    max-width: 350px; 
   }
 }
 
-/* Tablet: 1024px altı */
 @media (max-width: 1024px) {
   .currentPhotoCards {
     flex-wrap: wrap;
@@ -1214,7 +1193,7 @@ font-family: "Manrope500";
   }
 
   .currentPhotoCard_1 {
-    flex: 1 1 calc(45% - 20px); /* 2 sütun */
+    flex: 1 1 calc(45% - 20px); 
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -1230,7 +1209,7 @@ font-family: "Manrope500";
 
    .current_context {
     width: 100%;
-    max-width: 300px; /* biraz küçült */
+    max-width: 300px; 
     height: auto;
     padding-top: 25px;
     padding-left: 25px;
@@ -1248,7 +1227,6 @@ font-family: "Manrope500";
   }
 }
 
-/* Mobil: 768px altı */
 @media (max-width: 768px) {
   .currentPhotoCards {
     flex-direction: column;
@@ -1273,14 +1251,14 @@ font-family: "Manrope500";
 
 
     .current_context {
-    width: 100%; /* genişliği %100 yap */
-    height: auto; /* yüksekliği içeriğe göre ayarla */
-    padding-top: 20px; /* paddingleri küçült */
+    width: 100%; 
+    height: auto; 
+    padding-top: 20px; 
     padding-left: 20px;
   }
 
   .current_text_2 {
-    font-size: 16px; /* başlık küçült */
+    font-size: 16px; 
     line-height: 1.3;
     white-space: normal;
     word-break: break-word;
@@ -1288,7 +1266,7 @@ font-family: "Manrope500";
   }
 
   .current_text_3 {
-    font-size: 12px; /* paragraf küçült */
+    font-size: 12px; 
     white-space: normal;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -1325,11 +1303,10 @@ font-family: "Manrope500";
   }
 }
 
-/*ZANK_INSTA SECTION */
 
 
 .zankInsta_1 {
-  width: 100%;    /* slide container genişliğine uy */
+  width: 100%;    
   height: auto;
   border-radius: 5px;
   object-fit: cover;
@@ -1337,39 +1314,18 @@ font-family: "Manrope500";
 }
 
 
-/* Fotoğraf hover efekti (doğru seçici ile) */
 .zankInsta_1:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-/* Container flex ayarları */
 .zankInsta_photos {
-  /* Swiper kendi stilini kullansın, display:flex kaldır */
   margin-top: 40px;
   margin-bottom: 100px;
-  /* display: flex;  kaldırıldı */
-  /* gap: 8px;  kaldırıldı */
-  /* justify-content: center; kaldırıldı */
+  
 }
 
-/* Responsive fotoğraf boyutları */
 
-
-/* Responsive fotoğraf boyutları */
-/* @media (max-width: 1024px) {
-  .zankInsta_1 {
-    height: 180px;
-    width: 180px;
-  }
-}
-
-@media (max-width: 768px) {
-  .zankInsta_1 {
-    height: 150px;
-    width: 150px;
-  }
-} */
 
 @media (max-width:1024px){
    .widgetContainers{
@@ -1389,7 +1345,6 @@ font-family: "Manrope500";
 
 
 
-/* 1440px ve üstü - orijinal hali */
 @media (min-width: 1440px) {
   .bigShoeCard_1 {
     height: 700px;
@@ -1404,7 +1359,6 @@ font-family: "Manrope500";
   }
 }
 
-/* 1024px - biraz küçült, yan yana kalsın */
 @media (max-width: 1440px) and (min-width: 1025px) {
   .bigShoeCard_1 {
     height: 600px;
@@ -1420,12 +1374,10 @@ font-family: "Manrope500";
   }
 }
 
-/* Genel box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Üst kapsayıcılar için margin ve padding sıfırlama */
 body, html, #root {
   margin: 0;
   padding: 0;
@@ -1439,8 +1391,8 @@ body, html, #root {
     gap: 20px;
     margin-bottom: 40px;
     width: 100%;
-    max-width: 100%; /* genişlik sınırı */
-    padding: 0; /* varsa padding sıfırlayın */
+    max-width: 100%; 
+    padding: 0; 
   }
 
   .bigShoeCard_1 {
@@ -1465,8 +1417,8 @@ body, html, #root {
   .bigShoeCardImg_2 {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* resmin taşmaması ve dolması için */
-    display: block; /* inline img altındaki boşluk için */
+    object-fit: cover; 
+    display: block; 
   }
 }
 
@@ -1490,7 +1442,6 @@ body, html, #root {
   }
 }
 
-/* Medium devices (1024px) */
 @media (max-width: 1024px) {
   .comment_photo {
     height: 350px;
@@ -1515,7 +1466,6 @@ body, html, #root {
   }
 }
 
-/* Small devices (768px ve altı) */
 @media (max-width: 768px) {
   .comment_photo {
     height: 250px;
@@ -1609,36 +1559,12 @@ body, html, #root {
   right: -20px;
 }
 
-/* 🔥 Ok ikonlarının stilini küçült */
 :global(.swiper-button-next)::after,
 :global(.swiper-button-prev)::after {
-  font-size: 12px !important;  /* küçük ok ikonu */
+  font-size: 12px !important;  
   color: black !important;
 }
 
 
 
-/* YourStyles.module.css */
-
-
-
-
-
-
-
-    
-  
-/* 
-.dashedFrame {
-  background-color: #fff5f5;
-  width: 40%;
-  height: 2.3cm;
-  border: 1px dashed red;
-  border-radius: 12px;
-  box-sizing: border-box;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  
-} */
 

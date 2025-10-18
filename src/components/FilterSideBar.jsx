@@ -31,7 +31,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
 
 
     <aside className="filter-sidebar">
-      {/* Search */}
+    
       <div className="search_section">
         <input
           className="searchInput"
@@ -55,7 +55,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
         </button>
       </div>
 
-      {/* Product Categories */}
+      
       <h3 className="filter-title">Product Categories</h3>
       <div className="filter-group">
         <label><input type="checkbox" /> Free Metcon  <span className="filterPlus">+</span></label>
@@ -66,7 +66,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
         <label><input type="checkbox" /> Women's Shoes  <span className="filterPlus">+</span></label>
       </div>
 
-      {/* Filter by Price */}
+    
       <h3 className="filter-title">Filter by Price</h3>
       <div className="price-slider">
         <div className="double-range">
@@ -91,7 +91,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
       </div>
 
 
-      {/* Filter by Sports */}
+      
       <h3 className="filter-title">Filter by Sports</h3>
       <div className="filter-group">
         <label><input type="checkbox" /> Football <span className="filter-count">5</span></label>
@@ -103,7 +103,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
         <label><input type="checkbox" /> Walking <span className="filter-count">8</span></label>
       </div>
 
-      {/* Filter by Color */}
+     
       <h3 className="filter-title">Filter by Color</h3>
       <div className="filter-group">
         <label><span className="color-dot black"></span> Black <span className="filter-count">11</span></label>
@@ -114,7 +114,7 @@ const FilterSideBar = ({ setSearchQuery }) => {
         <label><span className="color-dot white"></span> White <span className="filter-count">6</span></label>
       </div>
 
-      {/* Filter by Sizes */}
+     
       <h3 className="filter-title">Filter by Sizes</h3>
       <div className="filter-group">
         <label>EU39 <span className="filter-count">9</span></label>
@@ -130,7 +130,6 @@ const FilterSideBar = ({ setSearchQuery }) => {
       </div>
 
 
-      {/* Product Status */}
       <h3 className="filter-title">Product Status</h3>
       <div className="filter-group">
         <label><input type="checkbox" /> In Stock</label>

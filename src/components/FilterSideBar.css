@@ -85,11 +85,10 @@
   border-color: #003375;
 }
 
-/* Basılı (clicked) hissi */
 .searchButton:active {
-  transform: translateY(2px); /* butonu hafif aşağı indirir */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
-  background-color: #002a5a; /* biraz daha koyu */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #002a5a; 
   border-color: #002a5a;
 }
 
@@ -135,7 +134,6 @@
   border: 1px solid #ccc;
 }
 
-/* Renk tanımları */
 .color-dot.black {
   background-color: black;
 }
@@ -158,7 +156,7 @@
 
 .color-dot.white {
   background-color: white;
-  border: 1px solid #aaa; /* Beyaz görünsün diye kenarlık */
+  border: 1px solid #aaa; 
 }
 .price-slider {
   width: 100%;
@@ -182,20 +180,17 @@
   z-index: 2;
 }
 
-/* Üst input aktif */
 .double-range .range-right {
   z-index: 3;
   pointer-events: auto;
 }
 
-/* Track */
 .double-range input[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
   background: #ddd;
   border-radius: 3px;
 }
 
-/* Daireler */
 .double-range input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
@@ -207,7 +202,6 @@
   border: none;
 }
 
-/* Firefox */
 .double-range input[type="range"]::-moz-range-thumb {
   width: 16px;
   height: 16px;
@@ -217,7 +211,6 @@
   border: none;
 }
 
-/* IE */
 .double-range input[type="range"]::-ms-thumb {
   width: 16px;
   height: 16px;

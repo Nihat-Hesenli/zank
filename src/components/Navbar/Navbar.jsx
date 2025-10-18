@@ -54,7 +54,6 @@ export const Navbar = () => {
                         <div className="navbar_left_text">
                             <Link to="/">HOME</Link>
                             <Link to="/shop">SHOP</Link>
-                            {/* <Link to="/product">PRODUCT</Link> */}
                             <Link to="/aboutUs">ABOUT US</Link>
                             <Link to="/contact">CONTACT</Link>
 
@@ -78,7 +77,7 @@ export const Navbar = () => {
                             fontSize={18}
                             color="black"
                             style={{ cursor: "pointer" }}
-                            onClick={() => setShowSearch(true)} // Arama kutusunu göster
+                            onClick={() => setShowSearch(true)} 
                         />
 
                         <HiOutlineShoppingBag fontSize={25} color="black" onClick={() => dispatch(setCartOpen(true))} style={{ cursor: "pointer" }} />

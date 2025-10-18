@@ -653,12 +653,7 @@ export const instaPhotosData = [
 ]
 
 
-// const infoFields = [
-//   { label: "SKU", value: product.sku },
-//   { label: "Category", value: product.category },
-//   { label: "Tag", value: product.tag },
-//   { label: "Brand", value: product.brand }
-// ];
+
 
 
 

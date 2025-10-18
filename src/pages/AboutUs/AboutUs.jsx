@@ -46,7 +46,7 @@ export const AboutUs = () => {
                 <div className={styles.AboutUsHeader}>
 
 
-                    <div className={styles.DarkOverlay}></div> {/* ✅ Gölge katmanı */}
+                    <div className={styles.DarkOverlay}></div> 
 
                     <div className={styles.AboutUsHeader}>
                         <img className={styles.AboutUsHeaderPhoto} src={AboutUsPhoto1} alt="" />
@@ -310,7 +310,6 @@ export const AboutUs = () => {
                                     </span>
 
                                     <div className={styles.VerifiedSection}>
-                                        {/* <img className={styles.VerifiedPhoto} src={AboutUsPhoto5} alt="" /> */}
 
                                         <span className={styles.VerifiedSectionText}>
                                             Reviewer
@@ -353,7 +352,6 @@ export const AboutUs = () => {
                                     </span>
 
                                     <div className={styles.VerifiedSection}>
-                                        {/* <img className={styles.VerifiedPhoto} src={AboutUsPhoto5} alt="" /> */}
 
                                         <span className={styles.VerifiedSectionText}>
                                             Reviewer

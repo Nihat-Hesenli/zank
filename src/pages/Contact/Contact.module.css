@@ -122,7 +122,7 @@
 
 .ContactBig{
         width: 92%;
-        /* height: 100%; */
+   
     padding: 126px 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -146,8 +146,8 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* istersen left hizalı kalır */
-    gap: 15px; /* inputlar arası boşluk */
+    align-items: flex-start; 
+    gap: 15px; 
 }
 
 

@@ -331,7 +331,7 @@ font-family: "Poppins", Sans-serif;
   width: 620px;
   height:10px;
   background-color: #d3d3d3; 
-/* Açık gri arkaplan */
+
   border-radius: 5px;
   overflow: hidden;
   margin-top: 13px;
@@ -339,11 +339,11 @@ font-family: "Poppins", Sans-serif;
 
 .progressBarFill {
   height: 100%;
-  background-color: #000000; /* Siyah dolu alan */
+  background-color: #000000;   
   transition: width 0.3s ease;
 }
 
-/* Container for all filters */
+  Container for all filters   
 .filtersSection {
   margin-top: 20px;
   display: flex;
@@ -352,7 +352,7 @@ font-family: "Poppins", Sans-serif;
   justify-content: start;
 }
 
-/* Her satır: başlık + içerik yan yana */
+   
 .filterGroupRow {
   display: flex;
   align-items: center;
@@ -360,7 +360,7 @@ font-family: "Poppins", Sans-serif;
   margin-top: 4%;
 }
 
-/* Başlık için */
+  
 .filterTitle {
     font-size:14px;
     font-family: "Poppins200";
@@ -369,24 +369,24 @@ font-family: "Poppins", Sans-serif;
 
 }
 
-/* Color dot container sağda */
+
 .colorOptions {
   display: flex;
   gap: 2px;
   margin-top: 0;
 }
 
-/* Renk kutuları büyüdü, border-radius azaldı */
+
 .colorDot {
-  width: 65px;  /* biraz daha büyük */
-  height: 23px; /* biraz daha yüksek */
-  border-radius: 1px; /* azaldı */
+  width: 65px;    
+  height: 23px;    
+  border-radius: 1px;    
   cursor: pointer;
   border: 1px solid #ccc;
   margin-left: 15px;
 }
 
-/* Renkler */
+   
 .black {
   background-color: black;
 }
@@ -407,7 +407,7 @@ font-family: "Poppins", Sans-serif;
   border: 1px solid #000;
 }
 
-/* Sizes container sağda, gap ve sarmayı koruyor */
+  
 .sizesOptions {
   display: flex;
   gap: 10px;
@@ -417,9 +417,9 @@ font-family: "Poppins", Sans-serif;
   margin-left:3%;
 }
 
-/* Sizes kutularındaki arka plan rengi açıldı, biraz daha açık lacivert */
+ 
 .sizeItem {
-  background-color: #00438b; /* Açık lacivert */
+  background-color: #00438b;  
   color: white;
   padding: 3px 18px;
   
@@ -430,7 +430,7 @@ font-family: "Poppins", Sans-serif;
   white-space: nowrap;
 }
 
-/* Sports input aynen kalsın */
+  Sports input aynen kalsın   
 .sportsInput {
   margin-top: 8px;
   padding: 6px 10px;
@@ -509,7 +509,7 @@ font-family: "Poppins", Sans-serif;
 }
 
 .selectedSize {
-  background-color: #0e4d92; /* Daha açık lacivert */
+  background-color: #0e4d92;   
   color: white;
   outline: 2px solid green;
   transform: scale(1.2);
@@ -580,18 +580,7 @@ font-size: 14px;
 
 }
 
-/* .blueButton1{
-    background-color: #00438b;
-    border-color: #00438b;
-    color:white;
-    font-size: 14px;
-    font-family: "Poppins400";
-    padding: 6.5px 60px;
-    margin-top: 10px;
 
-
-
-} */
 
 .blueButton1 {
   background-color: #00438b;
@@ -603,21 +592,21 @@ font-size: 14px;
   margin-top: 10px;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease; /* smooth geçişler için */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
+  transition: all 0.2s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
 }
 
-/* Hover efekti */
+
 .blueButton1:hover {
   background-color: #003375;
   border-color: #003375;
 }
 
-/* Basılı (clicked) hissi */
+
 .blueButton1:active {
-  transform: translateY(2px); /* butonu hafif aşağı indirir */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
-  background-color: #002a5a; /* biraz daha koyu */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #002a5a; 
   border-color: #002a5a;
 }
 
@@ -632,21 +621,21 @@ font-size: 14px;
   margin-top: 10px;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease; /* smooth geçişler için */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
+  transition: all 0.2s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
 }
 
-/* Hover efekti */
+ 
 .blueButton2:hover {
   background-color: #003375;
   border-color: #003375;
 }
 
-/* Basılı (clicked) hissi */
+
 .blueButton2:active {
-  transform: translateY(2px); /* butonu hafif aşağı indirir */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
-  background-color: #002a5a; /* biraz daha koyu */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);   
+  background-color: #002a5a;   
   border-color: #002a5a;
 }
 
@@ -697,21 +686,21 @@ font-size: 14px;
   padding: 6px 245px;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease; /* yumuşak geçişler */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* hafif gölge */
+  transition: all 0.2s ease;     
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);    
 }
 
-/* Hover efekti */
+ 
 .redButton:hover {
   background-color: #b80a07;
   border-color: #b80a07;
 }
 
-/* Basılı (clicked) hissi */
+ 
 .redButton:active {
-  transform: translateY(2px); /* butonu hafif aşağı indirir */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* gölge azalır */
-  background-color: #990806; /* biraz daha koyu */
+  transform: translateY(2px);    
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+  background-color: #990806;    
   border-color: #990806;
 }
 
@@ -1110,7 +1099,7 @@ line-height: 1.8;
 
 
 
-/* @media (max-width:400px) {
+  @media (max-width:400px) {
 
   .ProductContainer{
     display: flex;
@@ -1144,7 +1133,7 @@ line-height: 1.8;
 
 
 
-} */
+}   
 
 
 
@@ -1168,7 +1157,7 @@ line-height: 1.8;
 
   .ProductPhotos {
     display: flex;
-    flex-direction: column; /* önce bu, sonra içindeki elemanları yönetiriz */
+    flex-direction: column;     
   }
 
   .ProductPhoto_1 {
@@ -1237,7 +1226,7 @@ line-height: 1.8;
     width: 40%;
   }
 
-  /* .blueButton2’leri alta taşıyacağız */
+    .blueButton2’leri alta taşıyacağız   
   .blueButton2 {
     width: 13%;
     padding: 6px 0;
@@ -1251,11 +1240,11 @@ line-height: 1.8;
     flex-wrap: wrap;
   }
 
-  /* Heart ve refresh butonlarını buyButtons_2’nin soluna çeker */
-  /* .buyButtons_2 .blueButton2 {
+    Heart ve refresh butonlarını buyButtons_2’nin soluna çeker   
+    .buyButtons_2 .blueButton2 {
     order: 0;
     width: 20%;
-  } */
+  }   
 
   .redButton {
     width: 45%;
@@ -1301,8 +1290,8 @@ margin-left: 20px;
 }
 
   .card {
-    width: 48%; /* 2 kart yan yana */
-    height: 300px; /* yaklaşık 3sm */
+    width: 48%;   
+    height: 300px;    
     min-width: 200px;
   }
 

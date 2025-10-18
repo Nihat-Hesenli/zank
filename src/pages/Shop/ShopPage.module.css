@@ -37,7 +37,7 @@
 }
 
 
-/* Container */
+
 .shopPageContainer {
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   font-family: "Poppins400", sans-serif;
 }
 
-/* Üst breadcrumb ve başlık */
+
 .ShopPage_Title {
 width: 100%;
   height: 140px;
@@ -90,19 +90,17 @@ width: 100%;
 
 }
 
-/* İçerik Wrapper - Sidebar ve Main yan yana */
+
 .contentWrapper {
   display: flex;
   gap: 30px;
 }
 
-/* Sidebar */
 .sidebarWrapper {
   width: 250px;
   flex-shrink: 0;
 }
 
-/* Main content */
 .mainContent {
   flex: 1;
   display: flex;
@@ -111,13 +109,12 @@ width: 100%;
 }
 
 
-/* Free Shipping Card */
 
 .ShopPage_PhotoCard {
   width: 92%;
   height: 300px;
   border-radius: 8px;
-  overflow: hidden; /* Zoom taşmalarını gizle */
+  overflow: hidden; 
   position: relative;
   padding: 20px;
   color: white;
@@ -143,7 +140,6 @@ width: 100%;
   z-index: 0;
 }
 
-/* Hover olduğunda sadece background yakınlaşır */
 .ShopPage_PhotoCard:hover::before {
   transform: scale(1.2);
 }
@@ -222,8 +218,8 @@ width: 100%;
 }
 
 .filterText2 {
-  display: flex; /* Bu çok önemli! */
-  align-items: center; /* Dikey hizalamayı sağlar */
+  display: flex;
+  align-items: center; 
   padding: 8px 23px;
   border: 1px solid #ccc;
   background-color: white;
@@ -237,7 +233,7 @@ width: 100%;
   letter-spacing: 0.8px;
   font-family: "Poppins500";
   transition: all 0.3s ease;
-  /* padding-bottom kaldırıldı */
+  
 }
 
 
@@ -246,7 +242,6 @@ width: 100%;
   color: white;
 }
 
-/* Ürün listesi */
 .shopShoes_section {
   width: 100%;
 }
@@ -259,26 +254,24 @@ width: 100%;
   margin-left: 8%;
 }
 
-/* Grid düzeni - 4 sütun, her biri eşit genişlik */
 .shoeGrid {
   display: grid;
-  grid-template-columns: repeat(4, 240px); /* 4 sabit sütun */
-  column-gap: 30px; /* ⬅️ YATAY (kartlar arası) boşluk */
-  row-gap: 40px;    /* ⬇️ DİKEY (alt alta kartlar) boşluk */
+  grid-template-columns: repeat(4, 240px); 
+  column-gap: 30px; 
+  row-gap: 40px;    
   justify-content: center;
-  margin-left: 60px; /* Grid’i ortalar */
+  margin-left: 60px; 
 }
 
 
 
 .card {
   position: relative;
-  width: 100%; /* Grid hücresine tam oturur */
-  max-width: 250px; /* Kartlar çok büyümesin */
+  width: 100%; 
+  max-width: 250px; 
   height: 320px;
-  /* diğer stiller aynı */
+  
 
-/* Eskiden 360px'ti */
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: transparent;
@@ -290,7 +283,7 @@ width: 100%;
 
 .image {
   width: 100%;
-  height: 75%; /* Eskiden %80'di */
+  height: 75%; 
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -444,7 +437,6 @@ width: 100%;
 
 
 
-/* --- Varsayılan: 4 sütun --- */
 .shoeGrid {
   display: grid;
   grid-template-columns: repeat(4, 240px);
@@ -454,7 +446,6 @@ width: 100%;
   margin-left: 60px;
 }
 
-/* --- 1440px altı: 3 sütun --- */
 @media (max-width: 1440px) {
   .shoeGrid {
   display: grid;
@@ -474,10 +465,9 @@ width: 100%;
 
 }
 
-/* --- 1024px altı: sidebar gizle, 3 sütun --- */
 @media (max-width: 1024px) {
   .sidebarWrapper {
-    display: none; /* sidebar gizlendi */
+    display: none; 
   }
   .mainContent {
     margin-left: 0;
@@ -489,7 +479,6 @@ width: 100%;
   }
   .shoeGrid {
     grid-template-columns: repeat(3, 240px);
-    /* justify-content: center; */
      column-gap: 30px;
   row-gap: 40px;
   }
@@ -502,25 +491,24 @@ width: 100%;
 
 @media (max-width: 768px) {
   .shoeGrid {
-    width: 100vw; /* viewport genişliği */
-    max-width: 100%; /* taşmayı önle */
-    padding-left: 10px;  /* kenarlardan çok az boşluk */
+    width: 100vw; 
+    max-width: 100%; 
+    padding-left: 10px;  
     padding-right: 10px;
-    margin: 0 auto; /* ortala */
+    margin: 0 auto; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;  /* kartlar arası boşluk */
+    column-gap: 20px;  
     row-gap: 25px;
   }
 
   .card {
-    width: 100%;      /* sütun genişliği kadar */
-    height: 320px;    /* yükseklik ayarlanabilir */
+    width: 100%;      
+    height: 320px;    
     background-color: #f0f0f0;
   }
 }
 
-/* 480px altı için */
 @media (max-width: 480px) {
   .shoeGrid {
     width: 100vw;
@@ -529,14 +517,14 @@ width: 100%;
     padding-right: 8px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 sütun kalacak */
+    grid-template-columns: repeat(2, 1fr); 
     column-gap: 8px;
     row-gap: 12px;
   }
 
   .card {
     width: 100%;
-    height: 280px; /* biraz daha küçük yaptım */
+    height: 280px;
     background-color: #f0f0f0;
   }
 }
