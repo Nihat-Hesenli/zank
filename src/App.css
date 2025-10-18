@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope700";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}

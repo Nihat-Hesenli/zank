@@ -1,0 +1,44 @@
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.sliderWrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Yatay scroll ekle */
+  width: 100%;
+  max-width: 900px; /* İstersen burayı ayarla */
+  scroll-behavior: smooth; /* Kaydırma animasyonu */
+}
+
+/* Kartların slider içindeki maksimum genişliği */
+.sliderWrapper > * {
+  flex-shrink: 0; /* Kart küçülmesin */
+  max-width: 200px; /* Kart genişliğini sınırla (orijinal genişlik) */
+}
+
+/* Ok butonları */
+.arrowLeft,
+.arrowRight {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  transform: scale(1.2);
+}
+
+.arrowLeft:disabled,
+.arrowRight:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}

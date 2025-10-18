@@ -1,0 +1,542 @@
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope500";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Manrope400";
+  src: url(../../assets/fonts/Manrope/static/Manrope-Regular.ttf);
+}
+
+
+/* Container */
+.shopPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  font-family: "Poppins400", sans-serif;
+}
+
+/* Üst breadcrumb ve başlık */
+.ShopPage_Title {
+width: 100%;
+  height: 140px;
+  background-color: 	#f5f5f5;
+  margin-top: 2%;
+    margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+.homeShop_section {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+
+.homeShop_section li a {
+  color: #161616;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Poppins400";
+}
+
+.homeShop_section li a:hover {
+  text-decoration: underline;
+}
+
+.ShopText {
+  font-family: "Manrope400";
+  font-size: 25px;
+  margin: 0;
+  color: #161616;
+    margin-left: 18px;
+    letter-spacing: 1px;
+
+}
+
+/* İçerik Wrapper - Sidebar ve Main yan yana */
+.contentWrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebarWrapper {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+/* Main content */
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+/* Free Shipping Card */
+
+.ShopPage_PhotoCard {
+  width: 92%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden; /* Zoom taşmalarını gizle */
+  position: relative;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 8%;
+  transition: transform 0.3s ease;
+}
+
+.ShopPage_PhotoCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/images/ShopPage_Photo1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease;
+  z-index: 0;
+}
+
+/* Hover olduğunda sadece background yakınlaşır */
+.ShopPage_PhotoCard:hover::before {
+  transform: scale(1.2);
+}
+
+.ShopPage_PhotoCard_texts {
+  margin-bottom: 13%;
+  margin-left: 1%;
+  z-index: 1;
+  position: relative;
+}
+
+.ShopPage_PhotoCard_text_1 {
+  font-family: "Manrope400";
+  font-size: 13px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.ShopPage_PhotoCard_text_2 {
+  color: #7a7a7a;
+  font-family: "Poppins400";
+  font-size: 14px;
+  margin-top: 13px;
+}
+
+.ShopPage_PhotoCard_button {
+  margin-top: 15px;
+  margin-left: 1%;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  background-color: #e60b09;
+  border: none;
+  color: white;
+  font-family: "Poppins400";
+  cursor: pointer;
+  width: fit-content;
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+}
+
+
+
+.filterSection {
+  margin-bottom: 30px;
+  margin-left: 8%;
+}
+
+.filterTexts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filterText1 {
+  font-family: "Poppins500";
+  color: #161616;
+  font-size: 14px;
+}
+
+
+
+.filterText2_Section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.shopSvg1 {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.filterText2 {
+  display: flex; /* Bu çok önemli! */
+  align-items: center; /* Dikey hizalamayı sağlar */
+  padding: 8px 23px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.filterTextLeft {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  font-family: "Poppins500";
+  transition: all 0.3s ease;
+  /* padding-bottom kaldırıldı */
+}
+
+
+.filterText2:hover {
+  background-color:#161616;
+  color: white;
+}
+
+/* Ürün listesi */
+.shopShoes_section {
+  width: 100%;
+}
+
+.shopShoes_Text {
+  margin-bottom: 50px;
+  font-family: "Manrope400";
+  color: #161616;
+  font-size: 14px;
+  margin-left: 8%;
+}
+
+/* Grid düzeni - 4 sütun, her biri eşit genişlik */
+.shoeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px); /* 4 sabit sütun */
+  column-gap: 30px; /* ⬅️ YATAY (kartlar arası) boşluk */
+  row-gap: 40px;    /* ⬇️ DİKEY (alt alta kartlar) boşluk */
+  justify-content: center;
+  margin-left: 60px; /* Grid’i ortalar */
+}
+
+
+
+.card {
+  position: relative;
+  width: 100%; /* Grid hücresine tam oturur */
+  max-width: 250px; /* Kartlar çok büyümesin */
+  height: 320px;
+  /* diğer stiller aynı */
+
+/* Eskiden 360px'ti */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+
+.image {
+  width: 100%;
+  height: 75%; /* Eskiden %80'di */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+  opacity: 0.9;
+
+}
+
+.saleTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00438b;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Poppins500";
+  z-index: 2;
+}
+
+.discountTag {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background-color: #ffcccc;
+  color: red;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight:"Poppins500";
+  z-index: 2;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+
+.model {
+ 
+
+
+  font-family: "Manrope400";
+   color:#161616;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+  font-size: 14px;
+   color:#595959;
+ font-weight: 500;
+  margin: 0;
+  font-family: "Poppins500";
+}
+
+.rating {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 1px;
+  z-index: 2;
+}
+
+.star {
+  color: black; 
+  font-size: 11px;
+
+}
+
+
+.iconsOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-10px);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.card:hover .iconsOverlay {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.iconCircle {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.loadMoreBtn {
+  padding: 10px 40px;
+  background-color: #00438b;
+  border: none;
+  color: white;
+  font-family: "Manrope500";
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  border-radius: 26px;
+  transition: background-color 0.3s ease;
+  margin-left: 46%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+
+
+}
+
+.loadMoreBtn:hover {
+  background-color: #00265a;
+}
+
+
+.oldPrice {
+  margin-right: 5px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+    color: red; 
+
+}
+
+
+
+
+
+
+/* --- Varsayılan: 4 sütun --- */
+.shoeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  column-gap: 30px;
+  row-gap: 40px;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+/* --- 1440px altı: 3 sütun --- */
+@media (max-width: 1440px) {
+  .shoeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  column-gap: 30px;
+  row-gap: 40px;
+  justify-content: center;
+  margin-left: 60px;
+  }
+
+   .card {
+    width: 220px;
+    height: 290px;
+    background-color: #f0f0f0;
+  }
+
+
+}
+
+/* --- 1024px altı: sidebar gizle, 3 sütun --- */
+@media (max-width: 1024px) {
+  .sidebarWrapper {
+    display: none; /* sidebar gizlendi */
+  }
+  .mainContent {
+    margin-left: 0;
+    width: 100%;
+  }
+  .ShopPage_PhotoCard {
+    margin-left: 5%;
+    width: 90%;
+  }
+  .shoeGrid {
+    grid-template-columns: repeat(3, 240px);
+    /* justify-content: center; */
+     column-gap: 30px;
+  row-gap: 40px;
+  }
+   .card {
+    width: 250px;
+    height: 290px;
+    background-color: #f0f0f0;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoeGrid {
+    width: 100vw; /* viewport genişliği */
+    max-width: 100%; /* taşmayı önle */
+    padding-left: 10px;  /* kenarlardan çok az boşluk */
+    padding-right: 10px;
+    margin: 0 auto; /* ortala */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;  /* kartlar arası boşluk */
+    row-gap: 25px;
+  }
+
+  .card {
+    width: 100%;      /* sütun genişliği kadar */
+    height: 320px;    /* yükseklik ayarlanabilir */
+    background-color: #f0f0f0;
+  }
+}
+
+/* 480px altı için */
+@media (max-width: 480px) {
+  .shoeGrid {
+    width: 100vw;
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun kalacak */
+    column-gap: 8px;
+    row-gap: 12px;
+  }
+
+  .card {
+    width: 100%;
+    height: 280px; /* biraz daha küçük yaptım */
+    background-color: #f0f0f0;
+  }
+}

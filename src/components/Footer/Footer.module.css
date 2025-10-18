@@ -1,0 +1,397 @@
+
+@font-face {
+    font-family: "Poppins700";
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+   font-family: "Manrope700";
+    src: url(../../assets/fonts/Manrope/static/Manrope-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins400";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins600";
+    src: url(../../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+   font-family: "Manrope800";
+    src: url(../../assets/fonts/Manrope/static/Manrope-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Poppins500";
+    src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins200";
+    src: url(../../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+
+
+
+
+
+
+.FooterEmail_Text_1{
+    font-size: 26px;
+    line-height: 1.3;
+    color:#161616;
+    font-family:"Poppins400";
+    margin-bottom: 4px;
+
+}
+
+.FooterEmail_Text_2{
+
+
+
+    line-height: 1.8;
+    color:#343131;
+    font-family: "Poppins400";
+    font-size: 14px;
+   
+}
+
+
+.email_input{
+    background-color: #fff;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 1px solid #e1e2e3;
+    text-align: left;
+
+}
+
+.email_btn{
+    background-color: #e60b09;
+    text-align: center;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins500";
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footerIcons{
+
+    display: flex;
+    gap: 5px;
+    font-size: 33px;
+    margin-left: 24%;
+    margin-top: 8px;
+
+}
+
+
+.FooterEmail_Section{
+
+   display: flex;
+    gap: 50px;
+
+     padding-top: 50px;
+    margin-left:10px ;
+}
+
+.footer_inputEmail{
+
+    display: flex;
+
+}
+
+.email_input, .email_btn {
+  height: 50px; /* istediğin yüksekliğe göre ayarla */
+  box-sizing: border-box;
+}
+
+.FooterEmail_Texts{
+
+    flex-direction: column;
+}
+
+
+
+.footerSection {
+  margin-top: 45px;
+  background-image: linear-gradient(27deg, #000328 0%, #00458e 100%);
+  height: 380px;
+  width: 100%;
+
+  display: flex;
+  align-items: center; /* dikey ortala */
+}
+
+
+.footerText_1{
+
+    font-size: 16px;
+    line-height: 1.6;
+        font-style: normal;
+    font-family: "Manrope700";
+    color: white;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+
+
+}
+
+
+.footerText_1{
+
+
+    font-size: 14px;
+    font-family: "Poppins400";
+    line-height: 1.8;
+    color:#fff ;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+    letter-spacing: 0.5px;
+ list-style-type: none;}
+
+
+.footerTexts {
+  display: flex;
+  align-items: center; /* dikey ortalama */
+  gap: 160px;            /* div’ler arası yatay boşluk */
+  padding-left: 0.5cm; /* sol boşluk */
+  height: 100%;     
+  margin-bottom: 16px;
+}
+.footerPhoneButtons {
+  display: flex;
+  gap: 0; /* arada boşluk yok */
+}
+
+.footerRedBtn, .footerGreenBtn {
+  font-size: 18px;
+  font-family: "Poppins500";
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+  
+  padding: 15px 25px; /* padding’i azalt */
+}
+
+.footerRedBtn {
+  background-color: red;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footerGreenBtn {
+  background-color: transparent;
+  color: green;
+   
+  padding-left: 0px;
+  padding-right: 0px; /* İkon ve metin arası boşluk */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+
+}
+
+.footerGreenBtn svg {
+  width: 65px;
+  height: 65px;
+  margin-right: 5px;
+  
+}
+
+
+.footerPhone_text_1{
+
+        font-size: 14px;
+    line-height: 1.6;
+        font-style: normal;
+    font-family: "Manrope700";
+    color: white;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+
+
+
+}
+
+.appIcons{
+    color:white;
+    display: flex;
+    gap: 4px;
+    margin-top: 15px;
+  
+
+
+}
+
+.appIconsCircle{
+   
+    
+    background-color:#69727d;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+       display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footerPhone{
+
+    margin-left: 8%;
+    margin-bottom: 4%;
+}
+
+
+
+
+
+
+/* 1440px altı için */
+@media (max-width: 1440px) {
+  .FooterEmail_Section {
+    gap: 30px;
+    padding-top: 40px;
+    margin-left: 5px;
+  }
+
+  .footerIcons {
+    margin-left: 15%;
+    font-size: 28px;
+    margin-top: 6px;
+  }
+
+  .footerTexts {
+    gap: 120px;
+    padding-left: 0.3cm;
+  }
+
+  .footerPhone {
+    margin-left: 6%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 1024px altı için */
+@media (max-width: 1024px) {
+  .FooterEmail_Section {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_inputEmail {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .email_input {
+    width: 60%;
+    max-width: 400px;
+  }
+
+  .email_btn {
+    padding: 10px 20px;
+  }
+
+  .footerIcons {
+    margin-left: 0;
+    font-size: 26px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footerSection {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .footerTexts {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .footerText_Container {
+    flex: 1 1 40%;
+  }
+
+  .footerPhone {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerPhoneButtons {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* 768px altı için */
+@media (max-width: 768px) {
+  .footerTexts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+    gap: 20px 40px; /* satır ve sütun arası boşluk */
+    padding-right: 20%;
+  }
+
+  .footerText_Container {
+    width: 100%;
+  }
+
+  .footerPhoneButtons {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .footerRedBtn, .footerGreenBtn {
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-shrink: 0; /* küçülmeyi engelle */
+  }
+
+  .footerGreenBtn svg {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+  }
+
+  .footerPhone {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .footerPhone_text_1{
+    text-align: left;
+
+  }
+
+  /* Diğer önceki mobil ayarlar korunabilir */
+}
