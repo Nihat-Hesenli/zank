@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -72,40 +75,59 @@ import { shoesData } from "../../constants/Variables";
 
 
 
+
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, increaseItem, decreaseItem, setCartOpen } from "../../redux/cartSlice";
 
 
 import styles from "../Product/Product.module.css"
 
-
 export const Product = () => {
+    const { id: productId } = useParams();
+
+    // Tek bir product değişkeni kullanıyoruz
+    const product = shopShoesData.find(item => item.id === productId);
+
+    if (!product) return <div>Ürün bulunamadı. (id: {productId})</div>;
+
+    const [mainImage, setMainImage] = useState(product.imageBig);
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [selectedSport, setSelectedSport] = useState("Choose an option");
+    const [selectedColor, setSelectedColor] = useState(null);
+    const [selectedSize, setSelectedSize] = useState(null);
+
+    const [timeLeft, setTimeLeft] = useState({
+        days: 6,
+        hours: 8,
+        minutes: 16,
+        seconds: 50,
+    });
 
     const dispatch = useDispatch();
-  const cartItems = useSelector(state => state.cart.cartItems);
+    const cartItems = useSelector(state => state.cart.cartItems);
 
+    const handleAdd = () => {
+        dispatch(addToCart(product));
+        dispatch(setCartOpen(true));
+    };
 
-  const handleAdd = () => {
-    dispatch(addToCart(product));
-    dispatch(setCartOpen(true));                
-  };
+    const handleIncrease = (id) => dispatch(increaseItem(id));
+    const handleDecrease = (id) => dispatch(decreaseItem(id));
 
-
-   const handleIncrease = (id) => dispatch(increaseItem(id));
-  const handleDecrease = (id) => dispatch(decreaseItem(id));
-
-
-
-
+    const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
+    const handleSelect = (sport) => {
+        setSelectedSport(sport);
+        setDropdownOpen(false);
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTimeLeft((prevTime) => {
-                let { days, hours, minutes, seconds } = prevTime;
+            setTimeLeft(prev => {
+                let { days, hours, minutes, seconds } = prev;
 
                 if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
                     clearInterval(interval);
-                    return prevTime;
+                    return prev;
                 }
 
                 if (seconds > 0) seconds--;
@@ -129,81 +151,11 @@ export const Product = () => {
         return () => clearInterval(interval);
     }, []);
 
+   
 
 
 
 
-
-
-    const [timeLeft, setTimeLeft] = useState({
-        days: 6,
-        hours: 8,
-        minutes: 16,
-        seconds: 50,
-    });
-
-
-
-    const { id } = useParams();
-    const product = shopShoesData.find((item) => item.id === id);
-    if (!product) {
-        return <div>Ürün bulunamadı. (id: {id})</div>;
-    }
-
-
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const [selectedSport, setSelectedSport] = useState("Choose an opinion");
-    const [selectedColor, setSelectedColor] = useState(null);
-    const [selectedSize, setSelectedSize] = useState(null);
-
-    const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
-    const handleSelect = (sport) => {
-        setSelectedSport(sport);
-        setDropdownOpen(false);
-
-
-
-
-
-    };
-
-
-
- 
-    //     setCartItems(prevItems => {
-    //         let newItems = [];
-    //         let isFound = false;
-
-    //         // Mevcut cartItems içinde ürünü ara
-    //         for (let i = 0; i < prevItems.length; i++) {
-    //             if (prevItems[i].id === product.id) {
-    //                 isFound = true;
-    //                 // quantity artır
-    //                 newItems.push({ ...prevItems[i], quantity: prevItems[i].quantity + 1 });
-    //             } else {
-    //                 newItems.push(prevItems[i]);
-    //             }
-    //         }
-
-    //         // Eğer ürün bulunmadıysa, yeni ekle
-    //         if (!isFound) {
-    //             newItems.push({
-    //                 id: product.id,
-    //                 title: product.title,
-    //                 image: product.imageBig,
-    //                 price: product.price,
-    //                 minPrice: product.minPrice,
-    //                 maxPrice: product.maxPrice,
-    //                 percentage: product.percentage,
-    //                 quantity: 1
-    //             });
-    //         }
-
-    //         return newItems;
-    //     });
-
-    //     setCartOpen(true);
-    // };
 
 
 
@@ -241,15 +193,25 @@ export const Product = () => {
                             <img
                                 key={index}
                                 src={img}
+                                onClick={() => setMainImage(img)}
                                 className={`${styles.ProductPhoto_2} ${index === 5 ? styles.hideOnMobile : ''}`}
                                 alt={`mini-${index}`}
+                                style={{
+                                    cursor: "pointer",
+                                    border: mainImage === img ? "2px solid black" : "1px solid #ddd",
+                                    borderRadius: "8px",
+                                    transition: "0.2s"
+                                }}
+
+
+
                             />
                         ))}
                     </div>
 
 
                     <div className={styles.ProductPhoto_1}>
-                        <img src={product.imageBig}
+                        <img src={mainImage}
                             className={styles.ProductPhoto_1}
                             alt="main" />
                     </div>
@@ -421,20 +383,20 @@ export const Product = () => {
 
                                     <div className={styles.buyButtons}>
                                         <div className={styles.buyButtons_1}>
-                                            <button  className={styles.buyButtons_count}>{cartItems.find(item => item.id === product.id)?.quantity || 0}</button>
+                                            <button className={styles.buyButtons_count}>{cartItems.find(item => item.id === product.id)?.quantity || 0}</button>
                                             <button
-                                            
-                                                onClick={()=>{
-                                                    
-                                                       dispatch(addToCart({...product, image: product.imageBig}));
 
-                                                    
-                                                  
+                                                onClick={() => {
+
+                                                    dispatch(addToCart({ ...product, image: product.imageBig }));
+
+
+
                                                 }}
 
 
                                                 className={styles.blueButton1}>Add to cart </button>
-    
+
 
 
 

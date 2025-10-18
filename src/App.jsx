@@ -48,7 +48,7 @@ const decreaseItem = (id) => {
       setCartOpen={setCartOpen} />}>
           <Route index element={<HomePage />} />
           <Route  path="/shop"    element={<ShopPage/> }/>
-          <Route path="/product/:id" element={<Product increaseItem={increaseItem} decreaseItem={decreaseItem}   handleRemoveItem ={handleRemoveItem}   cartItems={cartItems} setCartItems={setCartItems}  setCartOpen={setCartOpen} />}/>
+          <Route path="/product/:id" element={<Product  increaseItem={increaseItem} decreaseItem={decreaseItem}   handleRemoveItem ={handleRemoveItem}   cartItems={cartItems} setCartItems={setCartItems}  setCartOpen={setCartOpen} />}/>
           <Route  path="/AboutUs"    element={<AboutUs /> }/>
           <Route  path="/Contact"    element={<Contact /> }/>
 
