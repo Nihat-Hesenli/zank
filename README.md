@@ -1,4 +1,4 @@
-# React Shop Page
+# E-commerce Shoes Shopgit 
 
 A responsive e-commerce shop page built with **React**, **Redux Toolkit**, and **React Router**.
 
