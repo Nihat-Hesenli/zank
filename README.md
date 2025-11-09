@@ -1,12 +1,73 @@
-# React + Vite
+# React Shop Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce shop page built with **React**, **Redux Toolkit**, and **React Router**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product grid with hover effects
+- Product filtering via sidebar
+- Product detail page with Add to Cart
+- Cart management using Redux (add/remove/increase/decrease)
+- Responsive design for desktop and mobile
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Redux Toolkit
+- React Router
+- CSS (custom + responsive)
+- Local fonts: Poppins & Manrope
+
+## 💻 Quick Start
+
+1. Clone the repo:
+```bash
+git clone https://github.com/Nihat-Hesenli/zank.git
+cd Zank_Website
+
+Install dependencies:
+
+bash
+
+npm install
+Run the app:
+
+bash
+
+npm start
+Open your browser and go to: http://localhost:3000
+
+🗂 Project Structure
+bash
+
+src/
+├─ components/         # Reusable components (Navbar, Card, layouts)
+├─ pages/              # Page components (HomePage, ShopPage, Product, AboutUs, Contact)
+├─ redux/              # Redux store and slices (cartSlice)
+├─ assets/             # Images, fonts, etc.
+├─ App.jsx             # Main app with routes
+└─ index.jsx           # App entry point
+⚙️ Redux Cart Functionality
+addToCart: Adds product to cart or increases quantity if already in cart
+
+removeItem: Removes product from cart
+
+increaseItem / decreaseItem: Updates quantity
+
+setCartOpen: Opens or closes the cart sidebar
+
+📱 Responsive Design
+Desktop: 4 columns in product grid
+
+Tablet: 3 columns
+
+Mobile: 2 columns
+
+Photo cards and product cards scale on hover
+
+📌 Notes
+Make sure your local fonts (Poppins and Manrope) are correctly placed under src/assets/fonts/
+
+All routing is handled with React Router v6
+
+Cart state is managed with Redux Toolkit
